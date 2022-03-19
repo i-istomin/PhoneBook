@@ -1,16 +1,25 @@
 package tests;
 
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class LoginTests extends TestBAse {
 
+    @BeforeMethod
+    public void precondition() {////is login?->log out
+        if (app.getHelperuser().isSignOutPresent()) {
+            app.getHelperuser().logout();
+        }
+    }
 
     @Test
     //metod loginsuccess ne smojem pochinit. on trebudet webdriver no ego tut ne budet. poetomu nuno ves metod udalit
     public void loginSuccess() {
     }
-//        //open login form
+
+    //        //open login form
 //        WebElement loginItem = wd.findElement(By.cssSelector("[href='/login']"));//tut seichas rabotaet implicitlyWait code
 //        loginItem.click();
 //
@@ -37,33 +46,46 @@ public class LoginTests extends TestBAse {
 //        //  Assert.assertTrue(sing out present?);
 //
 //    }
-
     @Test
     //peredelivaem public void loginSuccessNew()
     public void loginSuccessNew() {
 
-        //open login form
+        //1. open login form
         app.getHelperuser().openLoginRegistrationForm();//stanovimsia na imia metoda +enter+ create methid+helperuser
         //  click(By.cssSelector("[href='/login']")); -----> ubiraem i vstavliaem v helper user
 
-        //fill email & password
+        //2. fill email & password
         app.getHelperuser().fillLoginRegistrationForm("missira85@gmail.com", "Passw0rd$"); //stanovimsia na imia metoda +enter+ create methid+helperuser
         //type(By.xpath("//input[1]"), "missira85@gmail.com");-----> ubiraem i vstavliaem v helper user
         //  type(By.xpath("//input[2]"), "Passw0rd$");-----> ubiraem i vstavliaem v helper user
 
+        //3.click button login
+        app.getHelperuser().submitLogin();// click(By.xpath("//*[text()=' Login']"));  -----> ubiraem i vstavliaem v helper user
+//4. make pause
+        app.getHelperuser().pause(1000);
 
-        //click button login
 
-        app.getHelperuser().submitLogin();
-       // click(By.xpath("//*[text()=' Login']"));  -----> ubiraem i vstavliaem v helper user
+
 
 
         //Assert
-        Assert.assertTrue(app.getHelperuser().isLoginRegistrationSuccess());
+     //Assert.assertTrue(app.getHelperuser().isLoginRegistrationSuccess());
         //Assert.assertTrue(isElementPresent(By.xpath("//*[text()='Sign Out']")));   ---> ubiraem i vstavliaem v helper user
 
 
     }
-}
 
-// System.setProperty("webdriver.chrome.driver", "/home/i-istomin/TelRan/SYSTEMS/PhoneBook/chromedriver");
+    @Test
+    public void loginSuccessNew1() {
+        app.getHelperuser().openLoginRegistrationForm();
+        app.getHelperuser().fillLoginRegistrationForm("missira85@gmail.com", "Passw0rd$");
+       // app.getHelperuser().submitLogin();// click(By.xpath("//*[text()=' Login']"));  -----> ubiraem i vstavliaem v helper user
+        app.getHelperuser().pause(1000);
+    }
+
+//    @AfterMethod
+//    public void postConditions() {
+//        app.getHelperuser().submitLogin();
+//    }
+
+}

@@ -13,7 +13,6 @@ public class HelperBase {
     }
 
 
-
     public void type(By locator, String text) {
         //doljni proverit na null, potomu chto nam ne nujen element null, mi ne budem zahodit tuda, poetomu mi proverim vnachale esli est null ili net
         if (text != null) {
@@ -34,5 +33,14 @@ public class HelperBase {
     //metod boolean ponadobitsia dlia raznig szenariev i on budet bazovim dlia kajdogo helpera--> perenestsia v helperBase
     public boolean isElementPresent(By locator) {//vajno chtob mne vernuli true/false
         return wd.findElements(locator).size() > 0;
+    }
+
+    public void pause(int millis) {
+        try {
+            Thread.sleep(millis); //metod sleep trebuet brosit exception ili try catch
+            //lucheshe try catch, potomu chto exception mi doljni budem dobavit vezde v proekte
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }

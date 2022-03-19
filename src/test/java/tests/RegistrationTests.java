@@ -1,10 +1,16 @@
 package tests;
 
-import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class RegistrationTests extends TestBAse {
 
+    @BeforeMethod
+    public void preCondition(){
+        if (app.getHelperuser().isSignOutPresent()){
+            app.getHelperuser().logout();
+        }
+    }
 
 
     @Test
@@ -12,21 +18,17 @@ public class RegistrationTests extends TestBAse {
         int index = (int)(System.currentTimeMillis()/1000)%3600;
         System.out.println(index); //==sout
 
-        //open regform
-        app.getHelperuser().openLoginRegistrationForm();
 
-        //fill email +   //fill password
-        app.getHelperuser().fillLoginRegistrationForm("iraira85"+index+"@gmail.com", "passw0rd$");
-
-
-        //click registration
-        app.getHelperuser().submitRegistration();// noviy metod kot-go u nas ne bilo v logine.
-        //poetomu nam nujno ego sdelat v he;per usere
-
-
-        //assert
-        Assert.assertTrue(app.getHelperuser().isLoginRegistrationSuccess());
+        app.getHelperuser().openLoginRegistrationForm();//1.open regform
+        app.getHelperuser().fillLoginRegistrationForm("iraira1"+index+"@gmail.com", "passw0rd$");//2.fill email + fill password
+        app.getHelperuser().submitRegistration();//3.click registration
+        //Assert.assertTrue(app.getHelperuser().isSignOutPresent());
+        app.getHelperuser().pause(1000);    //4. make pause
 
 
     }
+//    @AfterMethod
+//    public void postConditions(){
+//        app.getHelperuser().submitLogin();
+//    }
 }
