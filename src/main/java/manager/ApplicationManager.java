@@ -33,4 +33,5 @@ public class ApplicationManager {
         return helperuser;
         //potom idem v testbase i udaliaem webdriver
     }
+
 }

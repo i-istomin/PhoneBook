@@ -1,5 +1,6 @@
 package tests;
 
+import models.User;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -52,40 +53,35 @@ public class LoginTests extends TestBAse {
 
         //1. open login form
         app.getHelperuser().openLoginRegistrationForm();//stanovimsia na imia metoda +enter+ create methid+helperuser
-        //  click(By.cssSelector("[href='/login']")); -----> ubiraem i vstavliaem v helper user
-
         //2. fill email & password
         app.getHelperuser().fillLoginRegistrationForm("missira85@gmail.com", "Passw0rd$"); //stanovimsia na imia metoda +enter+ create methid+helperuser
-        //type(By.xpath("//input[1]"), "missira85@gmail.com");-----> ubiraem i vstavliaem v helper user
-        //  type(By.xpath("//input[2]"), "Passw0rd$");-----> ubiraem i vstavliaem v helper user
-
         //3.click button login
         app.getHelperuser().submitLogin();// click(By.xpath("//*[text()=' Login']"));  -----> ubiraem i vstavliaem v helper user
-//4. make pause
-        app.getHelperuser().pause(1000);
-
-
-
-
-
+        //4. make pause
+        app.getHelperuser().pause(5000);
         //Assert
-     //Assert.assertTrue(app.getHelperuser().isLoginRegistrationSuccess());
-        //Assert.assertTrue(isElementPresent(By.xpath("//*[text()='Sign Out']")));   ---> ubiraem i vstavliaem v helper user
-
-
+        Assert.assertTrue(app.getHelperuser().isSignOutPresent());
     }
 
     @Test
     public void loginSuccessNew1() {
         app.getHelperuser().openLoginRegistrationForm();
         app.getHelperuser().fillLoginRegistrationForm("missira85@gmail.com", "Passw0rd$");
-       // app.getHelperuser().submitLogin();// click(By.xpath("//*[text()=' Login']"));  -----> ubiraem i vstavliaem v helper user
-        app.getHelperuser().pause(1000);
+        app.getHelperuser().submitLogin();
+        app.getHelperuser().pause(5000);
+        Assert.assertTrue(app.getHelperuser().isSignOutPresent());
     }
 
-//    @AfterMethod
-//    public void postConditions() {
-//        app.getHelperuser().submitLogin();
-//    }
+    @Test
+    public void loginSuccessModel() {
+        User user = new User().withEmail("missira85@gmail.com").withPassword("Passw0rd$");
+
+        app.getHelperuser().openLoginRegistrationForm();
+        app.getHelperuser().fillLoginRegistrationForm(user);
+        app.getHelperuser().submitLogin();
+        app.getHelperuser().pause(5000);
+        Assert.assertTrue(app.getHelperuser().isSignOutPresent());
+    }
+
 
 }
