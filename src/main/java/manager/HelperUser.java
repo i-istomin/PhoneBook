@@ -4,9 +4,13 @@ import models.User;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 public class HelperUser extends HelperBase {
+
+
     public HelperUser(WebDriver wd) {
         super(wd);
     } //podcherknet krasnim. teper naslednik mojet polzovatsia vsem chto est u roditelia
@@ -44,23 +48,44 @@ public class HelperUser extends HelperBase {
 
 
     public void handleAlert() {
-        Alert alert = wd.switchTo().alert();
-        String alertMessage = wd.switchTo().alert().getText();
-        System.out.println(alertMessage);
+        Alert alert = wd.switchTo().alert();  // Switching to Alert
+        String alertMessage = wd.switchTo().alert().getText();  // Capturing alert message.
+        System.out.println(alertMessage); // Displaying alert message
         try {
             Thread.sleep(5000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        alert.accept();
+        alert.accept(); // A ccepting alert
     }
-
 
     public boolean isRegistrationErrorDisplayed() {
         return isElementPresent(By.xpath("//*[.='Registration failed with code 400']"));
-
     }
 
+
+    public boolean isAlertDisplayed() {
+        //zajali ALT+ENTER-->introduce local variable-> alert
+        //posle cklick na knopku login, mi znaem chto uspeha ne budet. u nas negativniy test. i my
+        //znaem  chto sistaema vidaet alert
+        //poetomu nam nujno napisat metod kot-y provetrit esli alert poyavilsia ili net, i takim obrazom mi vidadim true ili false
+        Alert alert = new WebDriverWait(wd, 10).until(ExpectedConditions.alertIsPresent());
+        // mi vivizem wait i daem na poyavlenie etogo alerta 10 sec
+        if (alert == null) { //esli alert ne poyavilsia, to vernem false
+            return false;
+        } else {
+            return true; //togda zapishem obyect alert
+        }
+    }
+
+    public boolean isErrorWrongFormat() {
+        Alert alert = new WebDriverWait(wd, 10).until(ExpectedConditions.alertIsPresent());//snachala dojidaemsia poka alert poyavitsia
+        wd.switchTo().alert(); //potom perekluchaem alert na drugoe okno
+        String error= alert.getText();//vichitivaet text kot-y vpisan v alert
+        System.out.println(error);
+        alert.accept();
+        return error.contains("Wrong email or password format");
+    }
 }
 
 

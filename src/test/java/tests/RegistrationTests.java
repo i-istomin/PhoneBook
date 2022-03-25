@@ -62,9 +62,4 @@ public class RegistrationTests extends TestBAse {
 }
 
 
-//phonebook
-//**************
-//package model_user with 2 fields (email+password)+getters+setters_tostring
-//Registration-> add method with model that can work with new user
-
 //TOOL DEMOQA.COM

@@ -15,7 +15,7 @@ public class ApplicationManager {
         wd = new ChromeDriver();
         System.setProperty("webdriver.chrome.driver", "/home/i-istomin/TelRan/SYSTEMS/Qa32_StartSelenium/chromedriver");
         wd.manage().window().maximize();
-        wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);//LONG TIME, TIMEUNIT
+        wd.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);//LONG TIME, TIMEUNIT
 //delaem vremia tak kak internet stranichki mogut gruzitsia a web driver uje zashel i togda on mjet ne neiyti nujniy emu element
         //esli v techeni 10 sec ne naydet, to viydet exception
         wd.navigate().to("https://contacts-app.tobbymarshall815.vercel.app/");

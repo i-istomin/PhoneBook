@@ -83,5 +83,19 @@ public class LoginTests extends TestBAse {
         Assert.assertTrue(app.getHelperuser().isSignOutPresent());
     }
 
+    @Test
+    public void loginNegativePassword() {
+        User user = new User().withEmail("missira85@gmail.com").withPassword("Iira");
+
+        app.getHelperuser().openLoginRegistrationForm();
+        app.getHelperuser().fillLoginRegistrationForm(user);
+        app.getHelperuser().submitLogin();
+        app.getHelperuser().pause(5000);
+       // Assert.assertFalse(app.getHelperuser().isSignOutPresent());
+        Assert.assertTrue(app.getHelperuser().isAlertDisplayed());
+        Assert.assertTrue(app.getHelperuser().isErrorWrongFormat());
+
+    }
+
 
 }
