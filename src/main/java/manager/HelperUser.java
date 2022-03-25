@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 
-public class HelperUser extends HelperBase {
+public class HelperUser extends HelperBase  {
 
 
     public HelperUser(WebDriver wd) {
@@ -86,6 +86,8 @@ public class HelperUser extends HelperBase {
         alert.accept();
         return error.contains("Wrong email or password format");
     }
+
+
 }
 
 

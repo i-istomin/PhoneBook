@@ -9,6 +9,7 @@ public class ApplicationManager {
 
     WebDriver wd;
     HelperUser helperuser;
+    ContactHelper contact;
 
 
     public void init() {
@@ -20,18 +21,20 @@ public class ApplicationManager {
         //esli v techeni 10 sec ne naydet, to viydet exception
         wd.navigate().to("https://contacts-app.tobbymarshall815.vercel.app/");
         helperuser = new HelperUser(wd);//inizializirovali i napisali chemu in raven
-
+        contact = new ContactHelper(wd);
     }
 
     public void stop() {
-      //  wd.quit();//zakrivaem browser
-
+        //  wd.quit();//zakrivaem browser
     }
 
     //pravaya knopka+generate+getter+helper+ok
     public HelperUser getHelperuser() {
         return helperuser;
         //potom idem v testbase i udaliaem webdriver
+    }
+    public ContactHelper getContact(){
+        return contact;
     }
 
 }
