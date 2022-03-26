@@ -14,13 +14,13 @@ public class AddNewContactTests extends TestBAse {
 
     @Test
 
-    public void addNewContactSuccess(){
+    public void addNewContactSuccess() {
         int index = (int) (System.currentTimeMillis() / 1000) % 3600;
 
         Contact contact = Contact
                 .builder()
-                .name("Moshe")
-                .lastName("Kaplan")
+                .name("Moshe" + index)
+                .lastName("Kaplan" + index)
                 .phone("05258634" + index)
                 .email("hello" + index + "@gmail.com")
                 .address("Levinsky 17,Tel Aviv")
@@ -28,6 +28,12 @@ public class AddNewContactTests extends TestBAse {
                 .build();
 
 
+        app.getContact().openLoginRegistrationForm();
+        app.getContact().fillLoginRegistrationForm("missira85@gmail.com", "Passw0rd$");
+        app.getContact().submitLogin();
+        app.getContact().pause(5000);
+
+        app.getContact().addContactForm();
         app.getContact().openContactForm();
         app.getContact().fillContactForm(contact);
         app.getContact().saveContactForm();

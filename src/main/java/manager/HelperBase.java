@@ -1,5 +1,6 @@
 package manager;
 
+import models.User;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -42,5 +43,24 @@ public class HelperBase {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+    }
+
+    public void openLoginRegistrationForm() {
+        click(By.cssSelector("[href='/login']"));
+    }
+
+    public void fillLoginRegistrationForm(String email, String password) {
+        type(By.xpath("//input[1]"), email); //fill email
+        type(By.xpath("//input[2]"), password);//fill password
+    }
+
+    public void fillLoginRegistrationForm(User user) {
+        type(By.xpath("//input[1]"), user.getEmail());
+        type(By.xpath("//input[2]"), user.getPassword());
+    }
+
+
+    public void submitLogin() {
+        click(By.xpath("//*[text()=' Login']"));//By.xpath("//*[text()=' Login']")
     }
 }

@@ -11,28 +11,28 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class HelperUser extends HelperBase  {
 
 
-    public HelperUser(WebDriver wd) {
+    public HelperUser(WebDriver wd) {//podcherknet krasnim. teper naslednik mojet polzovatsia vsem chto est u roditelia
         super(wd);
-    } //podcherknet krasnim. teper naslednik mojet polzovatsia vsem chto est u roditelia
-
-    public void openLoginRegistrationForm() {
-        click(By.cssSelector("[href='/login']"));
     }
 
-    public void fillLoginRegistrationForm(String email, String password) {
-        type(By.xpath("//input[1]"), email); //fill email
-        type(By.xpath("//input[2]"), password);//fill password
-    }
-
-    public void fillLoginRegistrationForm(User user) {
-        type(By.xpath("//input[1]"), user.getEmail());
-        type(By.xpath("//input[2]"), user.getPassword());
-    }
-
-
-    public void submitLogin() {
-        click(By.xpath("//*[text()=' Login']"));//By.xpath("//*[text()=' Login']")
-    }
+//    public void openLoginRegistrationForm() {
+//        click(By.cssSelector("[href='/login']"));
+//    }
+//
+//    public void fillLoginRegistrationForm(String email, String password) {
+//        type(By.xpath("//input[1]"), email); //fill email
+//        type(By.xpath("//input[2]"), password);//fill password
+//    }
+//
+//    public void fillLoginRegistrationForm(User user) {
+//        type(By.xpath("//input[1]"), user.getEmail());
+//        type(By.xpath("//input[2]"), user.getPassword());
+//    }
+//
+//
+//    public void submitLogin() {
+//        click(By.xpath("//*[text()=' Login']"));//By.xpath("//*[text()=' Login']")
+//    }
 
     public boolean isSignOutPresent() {//is word  "sign out" display on the screen
         return isElementPresent(By.xpath("//*[text()='Sign Out']"));
