@@ -1,6 +1,7 @@
 package tests;
 
 import models.Contact;
+import models.User;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -9,8 +10,11 @@ public class AddNewContactTests extends TestBAse {
 
     @BeforeMethod
     public void preCondition() {
-
+        if (!app.getHelperuser().isSignOutPresent()) {
+            app.getHelperuser().login(new User().withEmail("missira85@gmail.com").withPassword("Passw0rd$"));
+        }
     }
+
 
     @Test
 
@@ -24,14 +28,11 @@ public class AddNewContactTests extends TestBAse {
                 .phone("05258634" + index)
                 .email("hello" + index + "@gmail.com")
                 .address("Levinsky 17,Tel Aviv")
-                .description("ok")
+                .description("friend")
                 .build();
 
-
-        app.getContact().openLoginRegistrationForm();
-        app.getContact().fillLoginRegistrationForm("missira85@gmail.com", "Passw0rd$");
-        app.getContact().submitLogin();
-        app.getContact().pause(5000);
+        System.out.println(contact.getName());//raspechativaem imia kot-e budem iskat
+        System.out.println(contact.getPhone());
 
         app.getContact().addContactForm();
         app.getContact().openContactForm();
@@ -41,5 +42,8 @@ public class AddNewContactTests extends TestBAse {
 
         Assert.assertTrue(app.getContact().isContactButtonBold());
         Assert.assertTrue(app.getContact().isContactCardExist());
+        Assert.assertTrue(app.getContact().isContactByName(contact.getName()));
+        Assert.assertTrue(app.getContact().isContactByPhone(contact.getPhone()));
+
     }
 }

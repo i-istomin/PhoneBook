@@ -3,24 +3,18 @@ package manager;
 import models.Contact;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import java.util.List;
 
 public class ContactHelper extends HelperBase {
     public ContactHelper(WebDriver wd) {
         super(wd);
     }
 
-//    public void openLoginRegistrationForm() {
-//        click(By.cssSelector("[href='/login']"));
-//    }
-//
-//    public void fillLoginRegistrationForm(String email, String password) {
-//        type(By.xpath("//input[1]"), email); //fill email
-//        type(By.xpath("//input[2]"), password);//fill password
-//    }
-//
-//    public void submitLogin() {
-//        click(By.xpath("//*[text()=' Login']"));//By.xpath("//*[text()=' Login']")
-//    }
+    public boolean isLogInPresent() {
+        return isElementPresent(By.xpath("a[href='/home']")); //a[href='/login']
+    }
 
     public void openContactForm() {
         //  click(By.cssSelector(".active"));
@@ -30,7 +24,6 @@ public class ContactHelper extends HelperBase {
 
     public void fillContactForm(Contact contact) {
         // type(By.cssSelector("input[placeholder='Name']"), contact.getName());
-
         type(By.xpath("//input[@placeholder='Name']"), contact.getName());
         type(By.xpath("//input[@placeholder='Last Name']"), contact.getLastName());
         // type(By.cssSelector("input[placeholder='Phone']"), contact.getPhone());
@@ -60,5 +53,24 @@ public class ContactHelper extends HelperBase {
 
     public void addContactForm() {
         click(By.cssSelector("a[href='/add']"));
+    }
+
+
+    public boolean isContactByName(String name) {
+        List<WebElement> list=wd.findElements(By.cssSelector("h2"));
+        for (WebElement el:list) {
+            if (el.getText().equals(name))//procerit text po imeni esli ono takoe je
+                return true;
+        }
+        return false;
+    }
+
+    public boolean isContactByPhone(String phone) {
+       List<WebElement> list=wd.findElements(By.cssSelector("h3"));
+        for (WebElement el:list) {
+            if (el.getText().equals(phone))
+                return true;
+        }
+        return false;
     }
 }
