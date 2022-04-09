@@ -1,14 +1,17 @@
 package tests;
 //optimizirovat code posle ogo kak perenesem vse metodi v helperbase
+
 import manager.ApplicationManager;
-import org.testng.annotations.AfterMethod;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
 public class TestBAse {
     //udaliaem webdriver i vmesto nego pishem :
     protected static ApplicationManager app = new ApplicationManager();
+    Logger logger = LoggerFactory.getLogger(TestBAse.class);
+
 
     @BeforeSuite
     public void setUp() { //browser+https

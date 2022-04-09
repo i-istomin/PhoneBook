@@ -3,16 +3,28 @@ package tests;
 import models.User;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
+import java.lang.reflect.Method;
 
 public class LoginTests extends TestBAse  {
 
     @BeforeMethod
-    public void precondition() {////is login?->log out
+    public void precondition(Method m) {////is login?->log out
         if (app.getHelperuser().isSignOutPresent()) {
             app.getHelperuser().logout();
+            logger.info("Test needs logout");
+
         }
+
+
+
+    }
+    @BeforeMethod
+    public void startLogger(Method m){
+logger.info("start test"+ m.getName());
     }
 
     @Test
@@ -50,7 +62,9 @@ public class LoginTests extends TestBAse  {
     @Test
     //peredelivaem public void loginSuccessNew()
     public void loginSuccessNew() {
-
+        // 0. otslejivaem s kakoy datou ya loginus
+        logger.info("Testing 'loginSuccessNew' ");
+        logger.info("The test starts with data [missira85@gmail.com] & [Irinka777$]");
         //1. open login form
         app.getHelperuser().openLoginRegistrationForm();//stanovimsia na imia metoda +enter+ create methid+helperuser
         //2. fill email & password
@@ -59,8 +73,10 @@ public class LoginTests extends TestBAse  {
         app.getHelperuser().submitLogin();// click(By.xpath("//*[text()=' Login']"));  -----> ubiraem i vstavliaem v helper user
         //4. make pause
         app.getHelperuser().pause(5000);
-        //Assert
+        //5.Assert
         Assert.assertTrue(app.getHelperuser().isSignOutPresent());
+        //6. pishem chto test proshel i ne upal
+        logger.info("Test 'loginSuccessNew' passed");
     }
 
     @Test
@@ -97,5 +113,8 @@ public class LoginTests extends TestBAse  {
 
     }
 
-
+@AfterMethod
+    public void endLogger(Method m){
+        logger.info("End of test"+m.getName());
+}
 }

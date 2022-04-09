@@ -1,0 +1,18 @@
+931  [Test worker] INFO  manager.ApplicationManager - All tests start in ChromeDriver
+6740 [Test worker] INFO  tests.TestBAse - start testloginSuccessNew
+6743 [Test worker] INFO  tests.TestBAse - Testing 'loginSuccessNew' 
+6744 [Test worker] INFO  tests.TestBAse - The test starts with data [missira85@gmail.com] & [Irinka777$]
+12081 [Test worker] INFO  tests.TestBAse - Test 'loginSuccessNew' passed
+12084 [Test worker] INFO  tests.TestBAse - End of testloginSuccessNew
+901  [Test worker] INFO  manager.ApplicationManager - All tests start in ChromeDriver
+6937 [Test worker] INFO  tests.TestBAse - start testloginSuccessNew
+6939 [Test worker] INFO  tests.TestBAse - Testing 'loginSuccessNew' 
+6939 [Test worker] INFO  tests.TestBAse - The test starts with data [missira85@gmail.com] & [Irinka777$]
+12274 [Test worker] INFO  tests.TestBAse - Test 'loginSuccessNew' passed
+12281 [Test worker] INFO  tests.TestBAse - End of testloginSuccessNew
+919  [Test worker] INFO  manager.ApplicationManager - All tests start in ChromeDriver
+6890 [Test worker] INFO  tests.TestBAse - start testloginSuccessNew
+6892 [Test worker] INFO  tests.TestBAse - Testing 'loginSuccessNew' 
+6893 [Test worker] INFO  tests.TestBAse - The test starts with data [missira85@gmail.com] & [Irinka777$]
+12232 [Test worker] INFO  tests.TestBAse - Test 'loginSuccessNew' passed
+12236 [Test worker] INFO  tests.TestBAse - End of testloginSuccessNew
