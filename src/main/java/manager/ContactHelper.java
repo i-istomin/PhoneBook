@@ -90,10 +90,23 @@ public class ContactHelper extends HelperBase {
         JavascriptExecutor executor = (JavascriptExecutor) wd;
         executor.executeScript("arguments[0].click();", element);
 
-
         click(By.xpath("//button[normalize-space()='Remove']"));
 
     }
+
+    public void removeAllContacts() {
+        clickOnTheFirstCard();
+
+        if (wd.findElements(By.cssSelector("div[class='contact-page_leftdiv__yhyke'] div div:nth-child(1)")).size() != 0 ) {
+            System.out.println("Cards are available");
+            clickOnTheFirstCard();
+        }
+        else {
+            System.out.println("no cards available");
+            wd.close();
+        }
+    }
+
 }
 
 

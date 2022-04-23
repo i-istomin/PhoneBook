@@ -25,7 +25,7 @@ public class RemoveContact extends TestBAse {
 
     @Test
     public void removeOneContact() {//throws InterruptedException {
-        logger.info("removeOneContact");
+        logger.info("Test 'removeOneContact' started");
         app.getHelperuser().openContactPage();
 
 //        int cardCountBeforeRemoving = app.getContact().getCardCount();
@@ -42,6 +42,9 @@ public class RemoveContact extends TestBAse {
 
     @Test
     public void removeAllConatct() {
+        logger.info("Test 'removeAllContact' started");
+        app.getHelperuser().openContactPage();
+        app.getContact().removeAllContacts();
 
     }
 
