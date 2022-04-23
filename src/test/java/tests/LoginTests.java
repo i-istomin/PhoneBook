@@ -1,5 +1,6 @@
 package tests;
 
+import manager.MyDataProvider;
 import models.User;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -9,22 +10,22 @@ import org.testng.annotations.Test;
 
 import java.lang.reflect.Method;
 
-public class LoginTests extends TestBAse  {
+public class LoginTests extends TestBAse {
 
     @BeforeMethod
     public void precondition(Method m) {////is login?->log out
         if (app.getHelperuser().isSignOutPresent()) {
             app.getHelperuser().logout();
-            logger.info("Test needs logout");
+            logger.info("Test" + m + " needs logout");
 
         }
 
 
-
     }
+
     @BeforeMethod
-    public void startLogger(Method m){
-logger.info("start test"+ m.getName());
+    public void startLogger(Method m) {
+        logger.info("start test" + m.getName());
     }
 
     @Test
@@ -64,7 +65,7 @@ logger.info("start test"+ m.getName());
     public void loginSuccessNew() {
         // 0. otslejivaem s kakoy datou ya loginus
         logger.info("Testing 'loginSuccessNew' ");
-        logger.info("The test starts with data [missira85@gmail.com] & [Irinka777$]");
+        logger.info("The test starts with data [missira85@gmail.com] & [Passw0rd$]");
         //1. open login form
         app.getHelperuser().openLoginRegistrationForm();//stanovimsia na imia metoda +enter+ create methid+helperuser
         //2. fill email & password
@@ -76,13 +77,20 @@ logger.info("start test"+ m.getName());
         //5.Assert
         Assert.assertTrue(app.getHelperuser().isSignOutPresent());
         //6. pishem chto test proshel i ne upal
-        logger.info("Test 'loginSuccessNew' passed");
+        logger.info("Test 'loginSuccessNew' passed successfully");
+
+
+        //    takeScreenShot("src/test/screenshots/screen.png");
+
     }
 
-    @Test
-    public void loginSuccessNew1() {
+
+    @Test(dataProvider = "validLoginData", dataProviderClass = MyDataProvider.class)//podkluchili dataProvider
+    public void loginSuccessNew1(String email, String password) {
+        logger.info("Testing 'loginSuccessNew1' ");
+        logger.info("The test starts with email" + email + "and password " + password);//[missira85@gmail.com] & [Passw0rd$] meniaem na email & password
         app.getHelperuser().openLoginRegistrationForm();
-        app.getHelperuser().fillLoginRegistrationForm("missira85@gmail.com", "Passw0rd$");
+        app.getHelperuser().fillLoginRegistrationForm(email, password);//("missira85@gmail.com", "Passw0rd$") meniaem na email & password
         app.getHelperuser().submitLogin();
         app.getHelperuser().pause(5000);
         Assert.assertTrue(app.getHelperuser().isSignOutPresent());
@@ -107,14 +115,14 @@ logger.info("start test"+ m.getName());
         app.getHelperuser().fillLoginRegistrationForm(user);
         app.getHelperuser().submitLogin();
         app.getHelperuser().pause(5000);
-       // Assert.assertFalse(app.getHelperuser().isSignOutPresent());
+        // Assert.assertFalse(app.getHelperuser().isSignOutPresent());
         Assert.assertTrue(app.getHelperuser().isAlertDisplayed());
         Assert.assertTrue(app.getHelperuser().isErrorWrongFormat());
 
     }
 
-@AfterMethod
-    public void endLogger(Method m){
-        logger.info("End of test"+m.getName());
-}
+    @AfterMethod
+    public void endLogger(Method m) {
+        logger.info("End of test" + m.getName());
+    }
 }

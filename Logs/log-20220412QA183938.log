@@ -1,0 +1,6 @@
+18:39:39.303 INFO  manager.ApplicationManager - All tests start in ChromeDriver
+18:39:45.491 INFO  tests.TestBAse - start testloginSuccessNew
+18:39:45.495 INFO  tests.TestBAse - Testing 'loginSuccessNew' 
+18:39:45.495 INFO  tests.TestBAse - The test starts with data [missira85@gmail.com] & [Irinka777$]
+18:39:50.904 INFO  tests.TestBAse - Test 'loginSuccessNew' passed successfully
+18:39:50.909 INFO  tests.TestBAse - End of testloginSuccessNew

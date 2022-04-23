@@ -93,6 +93,8 @@ public class HelperUser extends HelperBase  {
         fillLoginRegistrationForm(user);
         submitLogin();
     }
+
+
 }
 
 

@@ -1,9 +1,14 @@
 package manager;
 
+import com.google.common.io.Files;
 import models.User;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
+
+import java.io.File;
+import java.io.IOException;
+
+import static com.google.common.io.Files.copy;
+import static java.io.File.*;
 
 public class HelperBase {
     WebDriver wd;
@@ -44,6 +49,18 @@ public class HelperBase {
             e.printStackTrace();
         }
     }
+
+    public void takeScreenShot(String pathToFile){
+        File tmp = ((TakesScreenshot)wd).getScreenshotAs(OutputType.FILE);
+
+        File screenshot = new File(pathToFile);
+
+        try {
+            Files.copy(tmp,screenshot);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }
 //
 //    public void openLoginRegistrationForm() {
@@ -59,7 +76,6 @@ public class HelperBase {
 //        type(By.xpath("//input[1]"), user.getEmail());
 //        type(By.xpath("//input[2]"), user.getPassword());
 //    }
-//
 //
 //    public void submitLogin() {
 //        click(By.xpath("//*[text()=' Login']"));//By.xpath("//*[text()=' Login']")

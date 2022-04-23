@@ -2,24 +2,22 @@ package manager;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.concurrent.TimeUnit;
 
 public class ApplicationManager {
+    EventFiringWebDriver wd; // vmesto  WebDriver wd razmestili EventFiringWebDriver
 
-    WebDriver wd;
     HelperUser helperuser;
     ContactHelper contact;
-    Logger logger= LoggerFactory.getLogger(ApplicationManager.class);
-
-
-
+    Logger logger = LoggerFactory.getLogger(ApplicationManager.class);
 
 
     public void init() {
-        wd = new ChromeDriver();
+        wd = new EventFiringWebDriver(new ChromeDriver());//vmesto new ChromeDriver(); sozdali EventFiringWebDriver
         logger.info("All tests start in ChromeDriver");
         System.setProperty("webdriver.chrome.driver", "/home/i-istomin/TelRan/SYSTEMS/Qa32_StartSelenium/chromedriver");
         wd.manage().window().maximize();
@@ -29,6 +27,8 @@ public class ApplicationManager {
         wd.navigate().to("https://contacts-app.tobbymarshall815.vercel.app/");
         helperuser = new HelperUser(wd);//inizializirovali i napisali chemu in raven
         contact = new ContactHelper(wd);
+
+        wd.register(new MyListener());
     }
 
     public void stop() {
@@ -40,7 +40,8 @@ public class ApplicationManager {
         return helperuser;
         //potom idem v testbase i udaliaem webdriver
     }
-    public ContactHelper getContact(){
+
+    public ContactHelper getContact() {
         return contact;
     }
 

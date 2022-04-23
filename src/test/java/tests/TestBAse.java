@@ -7,11 +7,16 @@ import org.slf4j.LoggerFactory;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
+import java.lang.reflect.Method;
+
 public class TestBAse {
     //udaliaem webdriver i vmesto nego pishem :
     protected static ApplicationManager app = new ApplicationManager();
     Logger logger = LoggerFactory.getLogger(TestBAse.class);
 
+    public void startLogger(Method m) {
+        logger.info("Start test --->" + m.getName());
+    }
 
     @BeforeSuite
     public void setUp() { //browser+https
