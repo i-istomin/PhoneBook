@@ -94,6 +94,12 @@ public class HelperUser extends HelperBase  {
         submitLogin();
     }
 
+    public void openContactPage() {
+        click(By.xpath("//a[@class='active']"));
+
+    }
+
+
 
 }
 

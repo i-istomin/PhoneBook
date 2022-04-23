@@ -1,0 +1,32 @@
+16:42:50.794 INFO  manager.ApplicationManager - All tests start in ChromeDriver
+16:42:51.594 INFO  manager.MyListener - Start find element--->>>By.xpath: //*[text()='Sign Out']
+16:42:56.669 INFO  manager.MyListener - The element with locator--->>>By.xpath: //*[text()='Sign Out']<----was found
+16:42:56.674 INFO  tests.TestBAse - start testremoveOneConatct
+16:42:56.676 INFO  tests.TestBAse - removeOneConatct' 
+16:42:56.676 INFO  manager.MyListener - Start find element--->>>By.xpath: //a[@class='active']
+16:42:56.703 INFO  manager.MyListener - The element with locator--->>>By.xpath: //a[@class='active']<----was found
+16:42:56.766 INFO  manager.MyListener - Start find element--->>>By.cssSelector: .boards-page-board-section-list-item
+16:43:01.818 INFO  manager.MyListener - The element with locator--->>>By.cssSelector: .boards-page-board-section-list-item<----was found
+16:43:01.819 INFO  manager.MyListener - Start find element--->>>By.xpath: //div[@class='contact-page_leftdiv__yhyke']
+16:43:06.878 INFO  manager.MyListener - The element with locator--->>>By.xpath: //div[@class='contact-page_leftdiv__yhyke']<----was found
+16:43:06.878 INFO  manager.MyListener - Start find element--->>>By.cssSelector: div[class='contact-page_leftdiv__yhyke'] div div:nth-child(1)
+16:43:11.959 INFO  manager.MyListener - We have a 'throwable'--->>>no such element: Unable to locate element: {"method":"css selector","selector":"div[class='contact-page_leftdiv__yhyke'] div div:nth-child(1)"}
+  (Session info: chrome=96.0.4664.110)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'desktopirina', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.14.0-1031-oem', java.version: '11.0.14.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.uaW2ne}, goog:chromeOptions: {debuggerAddress: localhost:42309}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 022442358ba1c3844b8b66a5e8c66bf9
+*** Element info: {Using=css selector, value=div[class='contact-page_leftdiv__yhyke'] div div:nth-child(1)}
+16:43:11.962 INFO  manager.MyListener - We have a 'fill In Stack Trace'--->>>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"div[class='contact-page_leftdiv__yhyke'] div div:nth-child(1)"}
+  (Session info: chrome=96.0.4664.110)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'desktopirina', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.14.0-1031-oem', java.version: '11.0.14.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.uaW2ne}, goog:chromeOptions: {debuggerAddress: localhost:42309}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 022442358ba1c3844b8b66a5e8c66bf9
+*** Element info: {Using=css selector, value=div[class='contact-page_leftdiv__yhyke'] div div:nth-child(1)}
+16:43:12.558 INFO  manager.MyListener - This is the link to screen with problem-->src/test/screenshots/screen-2591.png
+16:43:12.560 INFO  tests.TestBAse - End of testremoveOneConatct

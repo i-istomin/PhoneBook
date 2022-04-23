@@ -2,6 +2,7 @@ package manager;
 
 import models.Contact;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -57,8 +58,8 @@ public class ContactHelper extends HelperBase {
 
 
     public boolean isContactByName(String name) {
-        List<WebElement> list=wd.findElements(By.cssSelector("h2"));
-        for (WebElement el:list) {
+        List<WebElement> list = wd.findElements(By.cssSelector("h2"));
+        for (WebElement el : list) {
             if (el.getText().equals(name))//procerit text po imeni esli ono takoe je
                 return true;
         }
@@ -66,11 +67,33 @@ public class ContactHelper extends HelperBase {
     }
 
     public boolean isContactByPhone(String phone) {
-       List<WebElement> list=wd.findElements(By.cssSelector("h3"));
-        for (WebElement el:list) {
+        List<WebElement> list = wd.findElements(By.cssSelector("h3"));
+        for (WebElement el : list) {
             if (el.getText().equals(phone))
                 return true;
         }
         return false;
     }
+
+    public int getCardCount() {
+        return wd.findElements(By.xpath("//div[@class='contact-page_leftdiv__yhyke']")).size() - recentlyViewedCards();
+    }
+
+    private int recentlyViewedCards() {
+        return wd.findElements(By.xpath("//div[@class='contact-page_leftdiv__yhyke']//div//div[1]")).size();
+    }
+
+
+    public void clickOnTheFirstCard() {
+
+        WebElement element = wd.findElement(By.cssSelector("div[class='contact-page_leftdiv__yhyke'] div div:nth-child(1)"));
+        JavascriptExecutor executor = (JavascriptExecutor) wd;
+        executor.executeScript("arguments[0].click();", element);
+
+
+        click(By.xpath("//button[normalize-space()='Remove']"));
+
+    }
 }
+
+

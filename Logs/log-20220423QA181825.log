@@ -1,0 +1,16 @@
+18:18:26.262 INFO  manager.ApplicationManager - All tests start in ChromeDriver
+18:18:27.015 INFO  manager.MyListener - Start find element--->>>By.xpath: //*[text()='Sign Out']
+18:18:32.083 INFO  manager.MyListener - The element with locator--->>>By.xpath: //*[text()='Sign Out']<----was found
+18:18:32.084 INFO  manager.MyListener - Start find element--->>>By.cssSelector: [href='/login']
+18:18:32.107 INFO  manager.MyListener - The element with locator--->>>By.cssSelector: [href='/login']<----was found
+18:18:32.182 INFO  manager.MyListener - Start find element--->>>By.xpath: //input[1]
+18:18:32.200 INFO  manager.MyListener - The element with locator--->>>By.xpath: //input[1]<----was found
+18:18:32.321 INFO  manager.MyListener - Start find element--->>>By.xpath: //input[2]
+18:18:32.333 INFO  manager.MyListener - The element with locator--->>>By.xpath: //input[2]<----was found
+18:18:32.445 INFO  manager.MyListener - Start find element--->>>By.xpath: //*[text()=' Login']
+18:18:32.457 INFO  manager.MyListener - The element with locator--->>>By.xpath: //*[text()=' Login']<----was found
+18:18:32.501 INFO  tests.TestBAse - start testremoveOneContact
+18:18:32.503 INFO  tests.TestBAse - removeOneContact
+18:18:32.503 INFO  manager.MyListener - Start find element--->>>By.xpath: //a[@class='active']
+18:18:32.521 INFO  manager.MyListener - The element with locator--->>>By.xpath: //a[@class='active']<----was found
+18:18:32.569 INFO  tests.TestBAse - End of testremoveOneContact
