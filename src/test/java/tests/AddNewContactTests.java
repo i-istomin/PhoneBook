@@ -1,5 +1,6 @@
 package tests;
 
+import manager.MyDataProvider;
 import models.Contact;
 import models.User;
 import org.testng.Assert;
@@ -44,6 +45,22 @@ public class AddNewContactTests extends TestBAse {
         Assert.assertTrue(app.getContact().isContactCardExist());
         Assert.assertTrue(app.getContact().isContactByName(contact.getName()));
         Assert.assertTrue(app.getContact().isContactByPhone(contact.getPhone()));
+
+    }
+
+    @Test(dataProvider="validDataContact", dataProviderClass = MyDataProvider.class)
+    public void addNewContactSuccessProviderCSV(Contact contact){
+
+        int index = (int) (System.currentTimeMillis() / 1000) % 3600;
+
+        contact.setEmail("hello" + index + "@gmail.com");
+        contact.setPhone("05258634" + index);
+
+       app.getContact().addContactForm();
+        app.getContact().openContactForm();
+        app.getContact().fillContactForm(contact);
+        app.getContact().saveContactForm();
+        app.getContact().pause(5000);;
 
     }
 }

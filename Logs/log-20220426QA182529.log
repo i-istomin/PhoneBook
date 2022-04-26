@@ -1,0 +1,47 @@
+18:25:30.768 INFO  manager.ApplicationManager - All tests start in ChromeDriver
+18:25:31.561 INFO  manager.MyListener - Start find element--->>>By.xpath: //*[text()='Sign Out']
+18:25:36.606 INFO  manager.MyListener - The element with locator--->>>By.xpath: //*[text()='Sign Out']<----was found
+18:25:36.609 INFO  tests.TestBAse - start testloginModelDataProvider
+18:25:36.623 INFO  manager.MyListener - Start find element--->>>By.cssSelector: [href='/login']
+18:25:36.648 INFO  manager.MyListener - The element with locator--->>>By.cssSelector: [href='/login']<----was found
+18:25:36.736 INFO  manager.MyListener - Start find element--->>>By.xpath: //input[1]
+18:25:36.758 INFO  manager.MyListener - The element with locator--->>>By.xpath: //input[1]<----was found
+18:25:36.914 INFO  manager.MyListener - Start find element--->>>By.xpath: //input[2]
+18:25:36.938 INFO  manager.MyListener - The element with locator--->>>By.xpath: //input[2]<----was found
+18:25:37.073 INFO  manager.MyListener - Start find element--->>>By.xpath: //*[text()=' Login']
+18:25:37.095 INFO  manager.MyListener - The element with locator--->>>By.xpath: //*[text()=' Login']<----was found
+18:25:42.151 INFO  manager.MyListener - Start find element--->>>By.xpath: //*[text()='Sign Out']
+18:25:42.173 INFO  manager.MyListener - We have a 'throwable'--->>>chrome not reachable
+  (Session info: chrome=96.0.4664.110)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'desktopirina', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.14.0-1031-oem', java.version: '11.0.14.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.p4cHKA}, goog:chromeOptions: {debuggerAddress: localhost:34699}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a645961ea9b365e2c9dc798b14bb1551
+*** Element info: {Using=xpath, value=//*[text()='Sign Out']}
+18:25:42.175 INFO  manager.MyListener - We have a 'fill In Stack Trace'--->>>org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=96.0.4664.110)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'desktopirina', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.14.0-1031-oem', java.version: '11.0.14.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.p4cHKA}, goog:chromeOptions: {debuggerAddress: localhost:34699}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a645961ea9b365e2c9dc798b14bb1551
+*** Element info: {Using=xpath, value=//*[text()='Sign Out']}
+18:25:42.198 INFO  tests.TestBAse - End of testloginModelDataProvider
+18:25:42.200 INFO  manager.MyListener - Start find element--->>>By.xpath: //*[text()='Sign Out']
+18:25:42.214 INFO  manager.MyListener - We have a 'throwable'--->>>chrome not reachable
+  (Session info: chrome=96.0.4664.110)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'desktopirina', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.14.0-1031-oem', java.version: '11.0.14.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.p4cHKA}, goog:chromeOptions: {debuggerAddress: localhost:34699}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a645961ea9b365e2c9dc798b14bb1551
+*** Element info: {Using=xpath, value=//*[text()='Sign Out']}
+18:25:42.215 INFO  manager.MyListener - We have a 'fill In Stack Trace'--->>>org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=96.0.4664.110)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'desktopirina', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.14.0-1031-oem', java.version: '11.0.14.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.p4cHKA}, goog:chromeOptions: {debuggerAddress: localhost:34699}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a645961ea9b365e2c9dc798b14bb1551
+*** Element info: {Using=xpath, value=//*[text()='Sign Out']}

@@ -16,7 +16,7 @@ public class LoginTests extends TestBAse {
     public void precondition(Method m) {////is login?->log out
         if (app.getHelperuser().isSignOutPresent()) {
             app.getHelperuser().logout();
-            logger.info("Test" + m + " needs logout");
+            //logger.info("Test" + m + " needs logout");
 
         }
 
@@ -73,7 +73,7 @@ public class LoginTests extends TestBAse {
         //3.click button login
         app.getHelperuser().submitLogin();// click(By.xpath("//*[text()=' Login']"));  -----> ubiraem i vstavliaem v helper user
         //4. make pause
-        app.getHelperuser().pause(5000);
+        app.getHelperuser().pause(1000);
         //5.Assert
         Assert.assertTrue(app.getHelperuser().isSignOutPresent());
         //6. pishem chto test proshel i ne upal
@@ -92,9 +92,10 @@ public class LoginTests extends TestBAse {
         app.getHelperuser().openLoginRegistrationForm();
         app.getHelperuser().fillLoginRegistrationForm(email, password);//("missira85@gmail.com", "Passw0rd$") meniaem na email & password
         app.getHelperuser().submitLogin();
-        app.getHelperuser().pause(5000);
+        app.getHelperuser().pause(1000);
         Assert.assertTrue(app.getHelperuser().isSignOutPresent());
     }
+
 
     @Test
     public void loginSuccessModel() {
@@ -106,6 +107,27 @@ public class LoginTests extends TestBAse {
         app.getHelperuser().pause(5000);
         Assert.assertTrue(app.getHelperuser().isSignOutPresent());
     }
+
+    @Test(dataProvider="validModelLogin", dataProviderClass = MyDataProvider.class)
+    public void loginModelDataProvider(User user){
+        app.getHelperuser().openLoginRegistrationForm();
+        app.getHelperuser().fillLoginRegistrationForm(user);
+        app.getHelperuser().submitLogin();
+        app.getHelperuser().pause(5000);
+        Assert.assertTrue(app.getHelperuser().isSignOutPresent());
+
+    }
+
+    @Test(dataProvider="validModelCSV", dataProviderClass = MyDataProvider.class)
+    public void loginModelCSVDataProvider(User user) {
+        app.getHelperuser().openLoginRegistrationForm();
+        app.getHelperuser().fillLoginRegistrationForm(user);
+        app.getHelperuser().submitLogin();
+        app.getHelperuser().pause(5000);
+          Assert.assertTrue(app.getHelperuser().isSignOutPresent());
+    }
+
+
 
     @Test
     public void loginNegativePassword() {

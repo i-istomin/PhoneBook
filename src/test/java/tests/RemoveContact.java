@@ -46,6 +46,9 @@ public class RemoveContact extends TestBAse {
         app.getHelperuser().openContactPage();
         app.getContact().removeAllContacts();
 
+       // Assert.assertFalse(app.getContact().isContactCardExist());
+        logger.info("no cards display at the page");
+
     }
 
 
