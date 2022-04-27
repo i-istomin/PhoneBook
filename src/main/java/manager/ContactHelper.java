@@ -91,15 +91,18 @@ public class ContactHelper extends HelperBase {
         executor.executeScript("arguments[0].click();", element);
 
         click(By.xpath("//button[normalize-space()='Remove']"));
+        pause(500);
 
     }
 
     public void removeAllContacts() {
         clickOnTheFirstCard();
+        pause(500);
 
         if (wd.findElements(By.cssSelector("div[class='contact-page_leftdiv__yhyke'] div div:nth-child(1)")).size() != 0 ) {
             System.out.println("Cards are available");
             clickOnTheFirstCard();
+            pause(1000);
         }
         else {
             System.out.println("no cards available");
@@ -107,6 +110,40 @@ public class ContactHelper extends HelperBase {
         }
     }
 
+    public int removeOneContactTaya() { //zapihem "int" chtobi srazu schital
+
+        int countBefore = countOfContacts();
+
+        if (!isCountListEmpty()) {
+            click(By.cssSelector(".contact-item_card__2SOIM"));
+            click(By.xpath("//button[normalize-space()='Remove']"));
+            pause(500);
+        }
+        int countAfter=countOfContacts();
+        return countBefore-countAfter;
+    }
+
+    private boolean isCountListEmpty() {
+        return  wd.findElements(By.cssSelector(".contact-item_card__2SOIM")).isEmpty();
+    }
+
+    private int countOfContacts() {
+        return wd.findElements(By.cssSelector(".contact-item_card__2SOIM")).size();
+
+    }
+
+    public void openContactPage() {
+        click(By.cssSelector(".contact-item_card__2SOIM"));
+        click(By.xpath("//button[normalize-space()='Remove']"));
+        pause(1000);
+    }
+
+    public void removeAllContactTaya() {
+       // while ();
+    }
+
+    public void provideContactData() {
+    }
 }
 
 

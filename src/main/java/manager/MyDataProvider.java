@@ -26,10 +26,10 @@ public class MyDataProvider {
     @DataProvider
     public Iterator<Object[]> validModelLogin() {
         List<Object[]> list = new ArrayList<>();
-        list.add(new Object[]{new User().withEmail("misskira85@gmail.com").withPassword("Pssw0rd$")});//polojili v kollekziu obyekt user
-        list.add(new Object[]{new User().withEmail("missmira85@gmail.com").withPassword("Pasw0rd$")});
-        list.add(new Object[]{new User().withEmail("missira8@gmail.com").withPassword("Pass0rd$")});
-        list.add(new Object[]{new User().withEmail("missira855@gmail.com").withPassword("Passw0d$")});
+        list.add(new Object[]{new User().withEmail("noa@gmail.com").withPassword("Nnoa12345$")});
+        list.add(new Object[]{new User().withEmail("mona@gmail.com").withPassword("Mm12345$")});
+        list.add(new Object[]{new User().withEmail("zoa@gmail.com").withPassword("Zoa12345$")});
+        list.add(new Object[]{new User().withEmail("wick416@gmail.com").withPassword("Ww12345$")});
 
         return list.iterator();
     }

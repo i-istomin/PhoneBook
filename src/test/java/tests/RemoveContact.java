@@ -15,6 +15,7 @@ public class RemoveContact extends TestBAse {
         if (!app.getHelperuser().isSignOutPresent()) {
             app.getHelperuser().login(new User().withEmail("missira85@gmail.com").withPassword("Passw0rd$"));
         }
+        app.getContact().provideContactData();
     }
 
     @BeforeMethod
@@ -26,13 +27,14 @@ public class RemoveContact extends TestBAse {
     @Test
     public void removeOneContact() {//throws InterruptedException {
         logger.info("Test 'removeOneContact' started");
-        app.getHelperuser().openContactPage();
+        app.getContact().openContactPage();
 
-//        int cardCountBeforeRemoving = app.getContact().getCardCount();
-//        app.getContact().clickOnTheFirstCard();
-//
-//        int cardCountAfterRemoving = app.getContact().getCardCount();
-//        Assert.assertEquals(cardCountAfterRemoving, cardCountBeforeRemoving-1);
+
+        int cardCountBeforeRemoving = app.getContact().getCardCount();
+        app.getContact().clickOnTheFirstCard();
+
+        int cardCountAfterRemoving = app.getContact().getCardCount();
+      //  Assert.assertEquals(cardCountAfterRemoving, cardCountBeforeRemoving-1);
 
 
         Assert.assertTrue(app.getContact().isContactCardExist());
@@ -41,14 +43,27 @@ public class RemoveContact extends TestBAse {
     }
 
     @Test
+    public void removeOneContactTaya() {
+
+        logger.info("Test 'removeOneContactTaya' started");
+      Assert.assertEquals(app.getContact().removeOneContactTaya(),1);
+    }
+
+
+    @Test
     public void removeAllConatct() {
         logger.info("Test 'removeAllContact' started");
-        app.getHelperuser().openContactPage();
+        app.getContact().openContactPage();
         app.getContact().removeAllContacts();
 
        // Assert.assertFalse(app.getContact().isContactCardExist());
         logger.info("no cards display at the page");
 
+    }
+
+    @Test
+    public void removeAllContactTaya(){
+      app.getContact().removeAllContactTaya();
     }
 
 

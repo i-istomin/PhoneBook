@@ -1,0 +1,18 @@
+20:05:45.886 INFO  manager.ApplicationManager - All tests start in ChromeDriver
+20:05:46.711 INFO  manager.MyListener - Start find element--->>>By.xpath: //*[text()='Sign Out']
+20:05:51.758 INFO  manager.MyListener - The element with locator--->>>By.xpath: //*[text()='Sign Out']<----was found
+20:05:51.760 INFO  manager.MyListener - Start find element--->>>By.cssSelector: [href='/login']
+20:05:51.784 INFO  manager.MyListener - The element with locator--->>>By.cssSelector: [href='/login']<----was found
+20:05:51.872 INFO  manager.MyListener - Start find element--->>>By.xpath: //input[1]
+20:05:51.898 INFO  manager.MyListener - The element with locator--->>>By.xpath: //input[1]<----was found
+20:05:52.070 INFO  manager.MyListener - Start find element--->>>By.xpath: //input[2]
+20:05:52.088 INFO  manager.MyListener - The element with locator--->>>By.xpath: //input[2]<----was found
+20:05:52.203 INFO  manager.MyListener - Start find element--->>>By.xpath: //*[text()=' Login']
+20:05:52.220 INFO  manager.MyListener - The element with locator--->>>By.xpath: //*[text()=' Login']<----was found
+20:05:52.271 INFO  tests.TestBAse - start testremoveOneContactTaya
+20:05:52.274 INFO  tests.TestBAse - Test 'removeOneContactTaya' started
+20:05:52.274 INFO  manager.MyListener - Start find element--->>>By.cssSelector: .contact-item_card__2SOIM
+20:05:53.036 INFO  manager.MyListener - The element with locator--->>>By.cssSelector: .contact-item_card__2SOIM<----was found
+20:05:53.100 INFO  manager.MyListener - Start find element--->>>By.xpath: //button[normalize-space()='Remove']
+20:05:53.124 INFO  manager.MyListener - The element with locator--->>>By.xpath: //button[normalize-space()='Remove']<----was found
+20:05:53.175 INFO  tests.TestBAse - End of testremoveOneContactTaya

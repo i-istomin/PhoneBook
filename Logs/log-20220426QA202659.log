@@ -1,0 +1,30 @@
+20:27:01.156 INFO  manager.ApplicationManager - All tests start in ChromeDriver
+20:27:02.050 INFO  manager.MyListener - Start find element--->>>By.xpath: //*[text()='Sign Out']
+20:27:07.107 INFO  manager.MyListener - The element with locator--->>>By.xpath: //*[text()='Sign Out']<----was found
+20:27:07.108 INFO  manager.MyListener - Start find element--->>>By.cssSelector: [href='/login']
+20:27:07.133 INFO  manager.MyListener - The element with locator--->>>By.cssSelector: [href='/login']<----was found
+20:27:07.212 INFO  manager.MyListener - Start find element--->>>By.xpath: //input[1]
+20:27:07.236 INFO  manager.MyListener - The element with locator--->>>By.xpath: //input[1]<----was found
+20:27:07.393 INFO  manager.MyListener - Start find element--->>>By.xpath: //input[2]
+20:27:07.415 INFO  manager.MyListener - The element with locator--->>>By.xpath: //input[2]<----was found
+20:27:07.554 INFO  manager.MyListener - Start find element--->>>By.xpath: //*[text()=' Login']
+20:27:07.569 INFO  manager.MyListener - The element with locator--->>>By.xpath: //*[text()=' Login']<----was found
+20:27:07.622 INFO  tests.TestBAse - start testremoveOneContact
+20:27:07.624 INFO  tests.TestBAse - Test 'removeOneContact' started
+20:27:07.625 INFO  manager.MyListener - Start find element--->>>By.cssSelector: .contact-item_card__2SOIM
+20:27:08.399 INFO  manager.MyListener - The element with locator--->>>By.cssSelector: .contact-item_card__2SOIM<----was found
+20:27:08.462 INFO  manager.MyListener - Start find element--->>>By.xpath: //button[normalize-space()='Remove']
+20:27:08.485 INFO  manager.MyListener - The element with locator--->>>By.xpath: //button[normalize-space()='Remove']<----was found
+20:27:08.535 INFO  manager.MyListener - Start find element--->>>By.xpath: //div[@class='contact-page_leftdiv__yhyke']
+20:27:08.554 INFO  manager.MyListener - The element with locator--->>>By.xpath: //div[@class='contact-page_leftdiv__yhyke']<----was found
+20:27:08.555 INFO  manager.MyListener - Start find element--->>>By.xpath: //div[@class='contact-page_leftdiv__yhyke']//div//div[1]
+20:27:08.574 INFO  manager.MyListener - The element with locator--->>>By.xpath: //div[@class='contact-page_leftdiv__yhyke']//div//div[1]<----was found
+20:27:08.575 INFO  manager.MyListener - Start find element--->>>By.cssSelector: div[class='contact-page_leftdiv__yhyke'] div div:nth-child(1)
+20:27:08.593 INFO  manager.MyListener - The element with locator--->>>By.cssSelector: div[class='contact-page_leftdiv__yhyke'] div div:nth-child(1)<----was found
+20:27:08.611 INFO  manager.MyListener - Start find element--->>>By.xpath: //button[normalize-space()='Remove']
+20:27:08.626 INFO  manager.MyListener - The element with locator--->>>By.xpath: //button[normalize-space()='Remove']<----was found
+20:27:09.159 INFO  manager.MyListener - Start find element--->>>By.xpath: //div[@class='contact-page_leftdiv__yhyke']
+20:27:09.175 INFO  manager.MyListener - The element with locator--->>>By.xpath: //div[@class='contact-page_leftdiv__yhyke']<----was found
+20:27:09.175 INFO  manager.MyListener - Start find element--->>>By.xpath: //div[@class='contact-page_leftdiv__yhyke']//div//div[1]
+20:27:09.189 INFO  manager.MyListener - The element with locator--->>>By.xpath: //div[@class='contact-page_leftdiv__yhyke']//div//div[1]<----was found
+20:27:09.196 INFO  tests.TestBAse - End of testremoveOneContact

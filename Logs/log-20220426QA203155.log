@@ -1,0 +1,23 @@
+20:31:57.388 INFO  manager.ApplicationManager - All tests start in ChromeDriver
+20:31:58.221 INFO  manager.MyListener - Start find element--->>>By.xpath: //*[text()='Sign Out']
+20:32:03.279 INFO  manager.MyListener - The element with locator--->>>By.xpath: //*[text()='Sign Out']<----was found
+20:32:03.280 INFO  manager.MyListener - Start find element--->>>By.cssSelector: [href='/login']
+20:32:03.303 INFO  manager.MyListener - The element with locator--->>>By.cssSelector: [href='/login']<----was found
+20:32:03.390 INFO  manager.MyListener - Start find element--->>>By.xpath: //input[1]
+20:32:03.415 INFO  manager.MyListener - The element with locator--->>>By.xpath: //input[1]<----was found
+20:32:03.593 INFO  manager.MyListener - Start find element--->>>By.xpath: //input[2]
+20:32:03.619 INFO  manager.MyListener - The element with locator--->>>By.xpath: //input[2]<----was found
+20:32:03.757 INFO  manager.MyListener - Start find element--->>>By.xpath: //*[text()=' Login']
+20:32:03.776 INFO  manager.MyListener - The element with locator--->>>By.xpath: //*[text()=' Login']<----was found
+20:32:03.835 INFO  tests.TestBAse - start testremoveAllConatct
+20:32:03.838 INFO  tests.TestBAse - Test 'removeAllContact' started
+20:32:03.838 INFO  manager.MyListener - Start find element--->>>By.xpath: //a[@class='active']
+20:32:03.870 INFO  manager.MyListener - The element with locator--->>>By.xpath: //a[@class='active']<----was found
+20:32:03.925 INFO  manager.MyListener - Start find element--->>>By.cssSelector: div[class='contact-page_leftdiv__yhyke'] div div:nth-child(1)
+20:32:04.636 INFO  manager.MyListener - The element with locator--->>>By.cssSelector: div[class='contact-page_leftdiv__yhyke'] div div:nth-child(1)<----was found
+20:32:04.660 INFO  manager.MyListener - Start find element--->>>By.xpath: //button[normalize-space()='Remove']
+20:32:04.687 INFO  manager.MyListener - The element with locator--->>>By.xpath: //button[normalize-space()='Remove']<----was found
+20:32:05.741 INFO  manager.MyListener - Start find element--->>>By.cssSelector: div[class='contact-page_leftdiv__yhyke'] div div:nth-child(1)
+20:32:10.764 INFO  manager.MyListener - The element with locator--->>>By.cssSelector: div[class='contact-page_leftdiv__yhyke'] div div:nth-child(1)<----was found
+20:32:10.833 INFO  tests.TestBAse - no cards display at the page
+20:32:10.837 INFO  tests.TestBAse - End of testremoveAllConatct

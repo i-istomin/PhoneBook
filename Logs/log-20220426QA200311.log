@@ -1,0 +1,36 @@
+20:03:13.418 INFO  manager.ApplicationManager - All tests start in ChromeDriver
+20:03:14.331 INFO  manager.MyListener - Start find element--->>>By.xpath: //*[text()='Sign Out']
+20:03:19.386 INFO  manager.MyListener - The element with locator--->>>By.xpath: //*[text()='Sign Out']<----was found
+20:03:19.387 INFO  manager.MyListener - Start find element--->>>By.cssSelector: [href='/login']
+20:03:19.416 INFO  manager.MyListener - The element with locator--->>>By.cssSelector: [href='/login']<----was found
+20:03:19.500 INFO  manager.MyListener - Start find element--->>>By.xpath: //input[1]
+20:03:19.523 INFO  manager.MyListener - The element with locator--->>>By.xpath: //input[1]<----was found
+20:03:19.684 INFO  manager.MyListener - Start find element--->>>By.xpath: //input[2]
+20:03:19.714 INFO  manager.MyListener - The element with locator--->>>By.xpath: //input[2]<----was found
+20:03:19.869 INFO  manager.MyListener - Start find element--->>>By.xpath: //*[text()=' Login']
+20:03:19.887 INFO  manager.MyListener - The element with locator--->>>By.xpath: //*[text()=' Login']<----was found
+20:03:19.942 INFO  tests.TestBAse - start testremoveOneContactTaya
+20:03:19.944 INFO  tests.TestBAse - Test 'removeOneContactTaya' started
+20:03:19.945 INFO  manager.MyListener - Start find element--->>>By.cssSelector: .contact-item_card__2SOIM
+20:03:20.711 INFO  manager.MyListener - The element with locator--->>>By.cssSelector: .contact-item_card__2SOIM<----was found
+20:03:20.777 INFO  manager.MyListener - Start find element--->>>By.xpath: button[normalize-space()='Remove']
+20:03:25.840 INFO  manager.MyListener - We have a 'throwable'--->>>no such element: Unable to locate element: {"method":"xpath","selector":"button[normalize-space()='Remove']"}
+  (Session info: chrome=96.0.4664.110)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'desktopirina', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.14.0-1031-oem', java.version: '11.0.14.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.SKk9M2}, goog:chromeOptions: {debuggerAddress: localhost:34947}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: db8024f531b8a3beb37f7c3c95610716
+*** Element info: {Using=xpath, value=button[normalize-space()='Remove']}
+20:03:25.842 INFO  manager.MyListener - We have a 'fill In Stack Trace'--->>>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"button[normalize-space()='Remove']"}
+  (Session info: chrome=96.0.4664.110)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'desktopirina', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.14.0-1031-oem', java.version: '11.0.14.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.SKk9M2}, goog:chromeOptions: {debuggerAddress: localhost:34947}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: db8024f531b8a3beb37f7c3c95610716
+*** Element info: {Using=xpath, value=button[normalize-space()='Remove']}
+20:03:26.414 INFO  manager.MyListener - This is the link to screen with problem-->src/test/screenshots/screen-205.png
+20:03:26.417 INFO  tests.TestBAse - End of testremoveOneContactTaya
