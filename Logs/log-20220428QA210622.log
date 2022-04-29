@@ -1,0 +1,3 @@
+21:06:22.609 INFO  manager.TestNgListener - onStart(ISuite suite)
+21:06:22.635 INFO  manager.TestNgListener - onTestStartnull
+21:06:24.357 INFO  manager.TestNgListener - onFinish(ISuite suite)

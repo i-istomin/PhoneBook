@@ -1,0 +1,121 @@
+09:16:47.810 INFO  manager.ApplicationManager - All tests start in ChromeDriver
+09:16:48.518 INFO  manager.MyListener - Start find element--->>>By.xpath: //*[text()='Sign Out']
+09:16:53.594 INFO  manager.MyListener - The element with locator--->>>By.xpath: //*[text()='Sign Out']<----was found
+09:16:53.596 INFO  tests.TestBAse - start testloginModelCSVDataProvider
+09:16:53.602 INFO  manager.MyListener - Start find element--->>>By.cssSelector: [href='/login']
+09:16:53.616 INFO  manager.MyListener - The element with locator--->>>By.cssSelector: [href='/login']<----was found
+09:16:53.671 INFO  manager.MyListener - Start find element--->>>By.xpath: //input[1]
+09:16:53.685 INFO  manager.MyListener - The element with locator--->>>By.xpath: //input[1]<----was found
+09:16:53.784 INFO  manager.MyListener - Start find element--->>>By.xpath: //input[2]
+09:16:53.797 INFO  manager.MyListener - The element with locator--->>>By.xpath: //input[2]<----was found
+09:16:53.884 INFO  manager.MyListener - Start find element--->>>By.xpath: //*[text()=' Login']
+09:16:53.896 INFO  manager.MyListener - The element with locator--->>>By.xpath: //*[text()=' Login']<----was found
+09:16:58.946 INFO  manager.MyListener - Start find element--->>>By.xpath: //*[text()='Sign Out']
+09:16:58.980 INFO  manager.MyListener - We have a 'throwable'--->>>unexpected alert open: {Alert text : Undefined Error 500}
+  (Session info: chrome=96.0.4664.110): Undefined Error 500
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'desktopirina', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.14.0-1033-oem', java.version: '11.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.CV9a87}, goog:chromeOptions: {debuggerAddress: localhost:43563}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c059c31bc84907e4572b06aa376bde15
+*** Element info: {Using=xpath, value=//*[text()='Sign Out']}
+09:16:58.982 INFO  manager.MyListener - We have a 'fill In Stack Trace'--->>>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Undefined Error 500}
+  (Session info: chrome=96.0.4664.110): Undefined Error 500
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'desktopirina', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.14.0-1033-oem', java.version: '11.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.CV9a87}, goog:chromeOptions: {debuggerAddress: localhost:43563}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c059c31bc84907e4572b06aa376bde15
+*** Element info: {Using=xpath, value=//*[text()='Sign Out']}
+09:16:59.293 INFO  manager.MyListener - This is the link to screen with problem-->src/test/screenshots/screen-1018.png
+09:16:59.295 INFO  tests.TestBAse - End of testloginModelCSVDataProvider
+09:16:59.296 INFO  manager.MyListener - Start find element--->>>By.xpath: //*[text()='Sign Out']
+09:17:04.317 INFO  manager.MyListener - The element with locator--->>>By.xpath: //*[text()='Sign Out']<----was found
+09:17:04.319 INFO  tests.TestBAse - start testloginModelCSVDataProvider
+09:17:04.320 INFO  manager.MyListener - Start find element--->>>By.cssSelector: [href='/login']
+09:17:04.334 INFO  manager.MyListener - The element with locator--->>>By.cssSelector: [href='/login']<----was found
+09:17:04.385 INFO  manager.MyListener - Start find element--->>>By.xpath: //input[1]
+09:17:04.393 INFO  manager.MyListener - The element with locator--->>>By.xpath: //input[1]<----was found
+09:17:04.486 INFO  manager.MyListener - Start find element--->>>By.xpath: //input[2]
+09:17:04.495 INFO  manager.MyListener - The element with locator--->>>By.xpath: //input[2]<----was found
+09:17:04.608 INFO  manager.MyListener - Start find element--->>>By.xpath: //*[text()=' Login']
+09:17:04.620 INFO  manager.MyListener - The element with locator--->>>By.xpath: //*[text()=' Login']<----was found
+09:17:09.649 INFO  manager.MyListener - Start find element--->>>By.xpath: //*[text()='Sign Out']
+09:17:09.656 INFO  manager.MyListener - We have a 'throwable'--->>>unexpected alert open: {Alert text : Undefined Error 500}
+  (Session info: chrome=96.0.4664.110): Undefined Error 500
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'desktopirina', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.14.0-1033-oem', java.version: '11.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.CV9a87}, goog:chromeOptions: {debuggerAddress: localhost:43563}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c059c31bc84907e4572b06aa376bde15
+*** Element info: {Using=xpath, value=//*[text()='Sign Out']}
+09:17:09.657 INFO  manager.MyListener - We have a 'fill In Stack Trace'--->>>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Undefined Error 500}
+  (Session info: chrome=96.0.4664.110): Undefined Error 500
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'desktopirina', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.14.0-1033-oem', java.version: '11.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.CV9a87}, goog:chromeOptions: {debuggerAddress: localhost:43563}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c059c31bc84907e4572b06aa376bde15
+*** Element info: {Using=xpath, value=//*[text()='Sign Out']}
+09:17:09.870 INFO  manager.MyListener - This is the link to screen with problem-->src/test/screenshots/screen-1029.png
+09:17:09.871 INFO  tests.TestBAse - End of testloginModelCSVDataProvider
+09:17:09.872 INFO  manager.MyListener - Start find element--->>>By.xpath: //*[text()='Sign Out']
+09:17:14.899 INFO  manager.MyListener - The element with locator--->>>By.xpath: //*[text()='Sign Out']<----was found
+09:17:14.901 INFO  tests.TestBAse - start testloginModelCSVDataProvider
+09:17:14.902 INFO  manager.MyListener - Start find element--->>>By.cssSelector: [href='/login']
+09:17:14.915 INFO  manager.MyListener - The element with locator--->>>By.cssSelector: [href='/login']<----was found
+09:17:14.951 INFO  manager.MyListener - Start find element--->>>By.xpath: //input[1]
+09:17:14.963 INFO  manager.MyListener - The element with locator--->>>By.xpath: //input[1]<----was found
+09:17:15.066 INFO  manager.MyListener - Start find element--->>>By.xpath: //input[2]
+09:17:15.076 INFO  manager.MyListener - The element with locator--->>>By.xpath: //input[2]<----was found
+09:17:15.178 INFO  manager.MyListener - Start find element--->>>By.xpath: //*[text()=' Login']
+09:17:15.186 INFO  manager.MyListener - The element with locator--->>>By.xpath: //*[text()=' Login']<----was found
+09:17:20.213 INFO  manager.MyListener - Start find element--->>>By.xpath: //*[text()='Sign Out']
+09:17:20.225 INFO  manager.MyListener - We have a 'throwable'--->>>unexpected alert open: {Alert text : Undefined Error 500}
+  (Session info: chrome=96.0.4664.110): Undefined Error 500
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'desktopirina', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.14.0-1033-oem', java.version: '11.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.CV9a87}, goog:chromeOptions: {debuggerAddress: localhost:43563}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c059c31bc84907e4572b06aa376bde15
+*** Element info: {Using=xpath, value=//*[text()='Sign Out']}
+09:17:20.226 INFO  manager.MyListener - We have a 'fill In Stack Trace'--->>>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Undefined Error 500}
+  (Session info: chrome=96.0.4664.110): Undefined Error 500
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'desktopirina', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.14.0-1033-oem', java.version: '11.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.CV9a87}, goog:chromeOptions: {debuggerAddress: localhost:43563}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c059c31bc84907e4572b06aa376bde15
+*** Element info: {Using=xpath, value=//*[text()='Sign Out']}
+09:17:20.495 INFO  manager.MyListener - This is the link to screen with problem-->src/test/screenshots/screen-1040.png
+09:17:20.496 INFO  tests.TestBAse - End of testloginModelCSVDataProvider
+09:17:20.497 INFO  manager.MyListener - Start find element--->>>By.xpath: //*[text()='Sign Out']
+09:17:25.508 INFO  manager.MyListener - The element with locator--->>>By.xpath: //*[text()='Sign Out']<----was found
+09:17:25.509 INFO  tests.TestBAse - start testloginModelCSVDataProvider
+09:17:25.511 INFO  manager.MyListener - Start find element--->>>By.cssSelector: [href='/login']
+09:17:25.523 INFO  manager.MyListener - The element with locator--->>>By.cssSelector: [href='/login']<----was found
+09:17:25.560 INFO  manager.MyListener - Start find element--->>>By.xpath: //input[1]
+09:17:25.567 INFO  manager.MyListener - The element with locator--->>>By.xpath: //input[1]<----was found
+09:17:25.668 INFO  manager.MyListener - Start find element--->>>By.xpath: //input[2]
+09:17:25.676 INFO  manager.MyListener - The element with locator--->>>By.xpath: //input[2]<----was found
+09:17:25.776 INFO  manager.MyListener - Start find element--->>>By.xpath: //*[text()=' Login']
+09:17:25.784 INFO  manager.MyListener - The element with locator--->>>By.xpath: //*[text()=' Login']<----was found
+09:17:30.815 INFO  manager.MyListener - Start find element--->>>By.xpath: //*[text()='Sign Out']
+09:17:30.829 INFO  manager.MyListener - We have a 'throwable'--->>>unexpected alert open: {Alert text : Undefined Error 500}
+  (Session info: chrome=96.0.4664.110): Undefined Error 500
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'desktopirina', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.14.0-1033-oem', java.version: '11.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.CV9a87}, goog:chromeOptions: {debuggerAddress: localhost:43563}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c059c31bc84907e4572b06aa376bde15
+*** Element info: {Using=xpath, value=//*[text()='Sign Out']}
+09:17:30.831 INFO  manager.MyListener - We have a 'fill In Stack Trace'--->>>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Undefined Error 500}
+  (Session info: chrome=96.0.4664.110): Undefined Error 500
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'desktopirina', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.14.0-1033-oem', java.version: '11.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.CV9a87}, goog:chromeOptions: {debuggerAddress: localhost:43563}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c059c31bc84907e4572b06aa376bde15
+*** Element info: {Using=xpath, value=//*[text()='Sign Out']}
+09:17:31.095 INFO  manager.MyListener - This is the link to screen with problem-->src/test/screenshots/screen-1050.png
+09:17:31.096 INFO  tests.TestBAse - End of testloginModelCSVDataProvider

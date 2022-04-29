@@ -39,8 +39,8 @@ public class ContactHelper extends HelperBase {
     }
 
     public void saveContactForm() {
-        //click(By.xpath("//button[contains(.,'Save')]"));
-        click(By.cssSelector("div[class='add_form__2rsm2'] button"));
+        //  click(By.cssSelector("div[class='add_form__2rsm2'] button"));
+        click(By.cssSelector("b"));
     }
 
     public boolean isContactButtonBold() {
@@ -75,40 +75,45 @@ public class ContactHelper extends HelperBase {
         return false;
     }
 
-    public int getCardCount() {
-        return wd.findElements(By.xpath("//div[@class='contact-page_leftdiv__yhyke']")).size() - recentlyViewedCards();
-    }
+//    public int getCardCount() {
+//        return wd.findElements(By.xpath("//div[@class='contact-page_leftdiv__yhyke']")).size() - recentlyViewedCards();
+//    }
+//
+//    private int recentlyViewedCards() {
+//        return wd.findElements(By.xpath("//div[@class='contact-page_leftdiv__yhyke']//div//div[1]")).size();
+//    }
 
-    private int recentlyViewedCards() {
-        return wd.findElements(By.xpath("//div[@class='contact-page_leftdiv__yhyke']//div//div[1]")).size();
-    }
-
-
-    public void clickOnTheFirstCard() {
-
-        WebElement element = wd.findElement(By.cssSelector("div[class='contact-page_leftdiv__yhyke'] div div:nth-child(1)"));
-        JavascriptExecutor executor = (JavascriptExecutor) wd;
-        executor.executeScript("arguments[0].click();", element);
-
-        click(By.xpath("//button[normalize-space()='Remove']"));
-        pause(500);
-
-    }
-
-    public void removeAllContacts() {
-        clickOnTheFirstCard();
-        pause(500);
-
-        if (wd.findElements(By.cssSelector("div[class='contact-page_leftdiv__yhyke'] div div:nth-child(1)")).size() != 0 ) {
-            System.out.println("Cards are available");
-            clickOnTheFirstCard();
-            pause(1000);
-        }
-        else {
-            System.out.println("no cards available");
-            wd.close();
-        }
-    }
+//nujno eredelat
+//    public int clickOnTheFirstCard() {
+//
+//        int countBefore = countOfContacts();
+//
+//        if (!isCountListEmpty()) {
+//            WebElement element = wd.findElement(By.cssSelector("div[class='contact-page_leftdiv__yhyke'] div div:nth-child(1)"));
+//            JavascriptExecutor executor = (JavascriptExecutor) wd;
+//            executor.executeScript("arguments[0].click();", element);
+//
+//            click(By.xpath("//button[normalize-space()='Remove']"));
+//            pause(500);
+//        }
+//        int countAfter=countOfContacts();
+//        return countBefore-countAfter;
+//    }
+//
+//    public void removeAllContacts() {
+//        clickOnTheFirstCard();
+//        pause(500);
+//
+//        if (wd.findElements(By.cssSelector("div[class='contact-page_leftdiv__yhyke'] div div:nth-child(1)")).size() != 0 ) {
+//            System.out.println("Cards are available");
+//            clickOnTheFirstCard();
+//            pause(1000);
+//        }
+//        else {
+//            System.out.println("no cards available");
+//            wd.close();
+//        }
+//    }
 
     public int removeOneContactTaya() { //zapihem "int" chtobi srazu schital
 
@@ -119,12 +124,12 @@ public class ContactHelper extends HelperBase {
             click(By.xpath("//button[normalize-space()='Remove']"));
             pause(500);
         }
-        int countAfter=countOfContacts();
-        return countBefore-countAfter;
+        int countAfter = countOfContacts();
+        return countBefore - countAfter;
     }
 
     private boolean isCountListEmpty() {
-        return  wd.findElements(By.cssSelector(".contact-item_card__2SOIM")).isEmpty();
+        return wd.findElements(By.cssSelector(".contact-item_card__2SOIM")).isEmpty();
     }
 
     private int countOfContacts() {
@@ -139,11 +144,22 @@ public class ContactHelper extends HelperBase {
     }
 
     public void removeAllContactTaya() {
-       // while ();
+        while (wd.findElements(By.cssSelector(".contact-item_card__2SOIM")).size() != 0) {
+            click(By.cssSelector(".contact-item_card__2SOIM"));
+            click(By.xpath("//button[text()='Remove']"));
+            pause(500);
+        }
     }
 
     public void provideContactData() {
+        // add contact (3-4)
+    }
+
+    public boolean isContactMessageDisplayed() {
+
+        return isElementPresent(By.cssSelector(".contact-page_message__2qafk"));
     }
 }
+
 
 

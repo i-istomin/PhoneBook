@@ -1,0 +1,12 @@
+09:13:31.985 INFO  manager.ApplicationManager - All tests start in ChromeDriver
+09:13:32.685 INFO  manager.MyListener - Start find element--->>>By.xpath: //*[text()='Sign Out']
+09:13:37.745 INFO  manager.MyListener - The element with locator--->>>By.xpath: //*[text()='Sign Out']<----was found
+09:13:37.748 INFO  manager.MyListener - Start find element--->>>By.cssSelector: [href='/login']
+09:13:37.771 INFO  manager.MyListener - The element with locator--->>>By.cssSelector: [href='/login']<----was found
+09:13:37.863 INFO  manager.MyListener - Start find element--->>>By.xpath: //input[1]
+09:13:37.886 INFO  manager.MyListener - The element with locator--->>>By.xpath: //input[1]<----was found
+09:13:38.022 INFO  manager.MyListener - Start find element--->>>By.xpath: //input[2]
+09:13:38.033 INFO  manager.MyListener - The element with locator--->>>By.xpath: //input[2]<----was found
+09:13:38.105 INFO  manager.MyListener - Start find element--->>>By.xpath: //*[text()=' Login']
+09:13:38.116 INFO  manager.MyListener - The element with locator--->>>By.xpath: //*[text()=' Login']<----was found
+09:13:43.226 INFO  tests.TestBAse - End of testloginNegativePassword

@@ -1,0 +1,57 @@
+11:54:57.885 INFO  manager.ApplicationManager - All tests start in ChromeDriver
+11:54:58.668 INFO  tests.TestBAse - Start test --->removeOneContactTaya
+11:54:58.671 INFO  manager.MyListener - Start find element--->>>By.xpath: //*[text()='Sign Out']
+11:55:03.704 INFO  manager.MyListener - The element with locator--->>>By.xpath: //*[text()='Sign Out']<----was found
+11:55:03.705 INFO  manager.MyListener - Start find element--->>>By.cssSelector: [href='/login']
+11:55:03.727 INFO  manager.MyListener - The element with locator--->>>By.cssSelector: [href='/login']<----was found
+11:55:03.801 INFO  manager.MyListener - Start find element--->>>By.xpath: //input[1]
+11:55:03.815 INFO  manager.MyListener - The element with locator--->>>By.xpath: //input[1]<----was found
+11:55:03.908 INFO  manager.MyListener - Start find element--->>>By.xpath: //input[2]
+11:55:03.920 INFO  manager.MyListener - The element with locator--->>>By.xpath: //input[2]<----was found
+11:55:03.997 INFO  manager.MyListener - Start find element--->>>By.xpath: //*[text()=' Login']
+11:55:04.009 INFO  manager.MyListener - The element with locator--->>>By.xpath: //*[text()=' Login']<----was found
+11:55:04.038 INFO  tests.TestBAse - Start testremoveOneContactTaya
+11:55:04.040 INFO  tests.TestBAse - Test 'removeOneContactTaya' started
+11:55:04.040 INFO  manager.MyListener - Start find element--->>>By.cssSelector: .contact-item_card__2SOIM
+11:55:04.792 INFO  manager.MyListener - The element with locator--->>>By.cssSelector: .contact-item_card__2SOIM<----was found
+11:55:04.793 INFO  manager.MyListener - Start find element--->>>By.cssSelector: .contact-item_card__2SOIM
+11:55:04.808 INFO  manager.MyListener - The element with locator--->>>By.cssSelector: .contact-item_card__2SOIM<----was found
+11:55:04.809 INFO  manager.MyListener - Start find element--->>>By.cssSelector: .contact-item_card__2SOIM
+11:55:04.833 INFO  manager.MyListener - The element with locator--->>>By.cssSelector: .contact-item_card__2SOIM<----was found
+11:55:04.886 INFO  manager.MyListener - Start find element--->>>By.xpath: //button[normalize-space()='Remove']
+11:55:04.902 INFO  manager.MyListener - The element with locator--->>>By.xpath: //button[normalize-space()='Remove']<----was found
+11:55:05.440 INFO  manager.MyListener - Start find element--->>>By.cssSelector: .contact-item_card__2SOIM
+11:55:05.455 INFO  manager.MyListener - The element with locator--->>>By.cssSelector: .contact-item_card__2SOIM<----was found
+11:55:05.463 INFO  tests.TestBAse - End of testremoveOneContactTaya
+11:55:05.469 INFO  tests.TestBAse - Start test --->removeAllContactTaya
+11:55:05.471 INFO  manager.MyListener - Start find element--->>>By.xpath: //*[text()='Sign Out']
+11:55:05.485 INFO  manager.MyListener - The element with locator--->>>By.xpath: //*[text()='Sign Out']<----was found
+11:55:05.486 INFO  manager.MyListener - Start find element--->>>By.cssSelector: .contact-item_card__2SOIM
+11:55:05.499 INFO  manager.MyListener - The element with locator--->>>By.cssSelector: .contact-item_card__2SOIM<----was found
+11:55:05.500 INFO  manager.MyListener - Start find element--->>>By.cssSelector: .contact-item_card__2SOIM
+11:55:05.513 INFO  manager.MyListener - The element with locator--->>>By.cssSelector: .contact-item_card__2SOIM<----was found
+11:55:05.557 INFO  manager.MyListener - Start find element--->>>By.xpath: //button[text()='Remove']
+11:55:05.572 INFO  manager.MyListener - The element with locator--->>>By.xpath: //button[text()='Remove']<----was found
+11:55:06.097 INFO  manager.MyListener - Start find element--->>>By.cssSelector: .contact-item_card__2SOIM
+11:55:06.112 INFO  manager.MyListener - The element with locator--->>>By.cssSelector: .contact-item_card__2SOIM<----was found
+11:55:06.114 INFO  manager.MyListener - Start find element--->>>By.cssSelector: .contact-item_card__2SOIM
+11:55:06.128 INFO  manager.MyListener - The element with locator--->>>By.cssSelector: .contact-item_card__2SOIM<----was found
+11:55:06.168 INFO  manager.MyListener - Start find element--->>>By.xpath: //button[text()='Remove']
+11:55:06.181 INFO  manager.MyListener - The element with locator--->>>By.xpath: //button[text()='Remove']<----was found
+11:55:06.730 INFO  manager.MyListener - Start find element--->>>By.cssSelector: .contact-item_card__2SOIM
+11:55:06.745 INFO  manager.MyListener - The element with locator--->>>By.cssSelector: .contact-item_card__2SOIM<----was found
+11:55:06.746 INFO  manager.MyListener - Start find element--->>>By.cssSelector: .contact-item_card__2SOIM
+11:55:06.759 INFO  manager.MyListener - The element with locator--->>>By.cssSelector: .contact-item_card__2SOIM<----was found
+11:55:06.797 INFO  manager.MyListener - Start find element--->>>By.xpath: //button[text()='Remove']
+11:55:06.812 INFO  manager.MyListener - The element with locator--->>>By.xpath: //button[text()='Remove']<----was found
+11:55:07.359 INFO  manager.MyListener - Start find element--->>>By.cssSelector: .contact-item_card__2SOIM
+11:55:07.375 INFO  manager.MyListener - The element with locator--->>>By.cssSelector: .contact-item_card__2SOIM<----was found
+11:55:07.376 INFO  manager.MyListener - Start find element--->>>By.cssSelector: .contact-item_card__2SOIM
+11:55:07.388 INFO  manager.MyListener - The element with locator--->>>By.cssSelector: .contact-item_card__2SOIM<----was found
+11:55:07.424 INFO  manager.MyListener - Start find element--->>>By.xpath: //button[text()='Remove']
+11:55:07.438 INFO  manager.MyListener - The element with locator--->>>By.xpath: //button[text()='Remove']<----was found
+11:55:07.984 INFO  manager.MyListener - Start find element--->>>By.cssSelector: .contact-item_card__2SOIM
+11:55:13.001 INFO  manager.MyListener - The element with locator--->>>By.cssSelector: .contact-item_card__2SOIM<----was found
+11:55:13.001 INFO  manager.MyListener - Start find element--->>>By.cssSelector: .contact-page_message__2qafk
+11:55:13.016 INFO  manager.MyListener - The element with locator--->>>By.cssSelector: .contact-page_message__2qafk<----was found
+11:55:13.018 INFO  tests.TestBAse - End of testremoveAllContactTaya

@@ -1,0 +1,132 @@
+11:55:32.087 INFO  manager.ApplicationManager - All tests start in ChromeDriver
+11:55:32.805 INFO  tests.TestBAse - Start test --->addNewContactSuccess
+11:55:32.808 INFO  manager.MyListener - Start find element--->>>By.xpath: //*[text()='Sign Out']
+11:55:37.882 INFO  manager.MyListener - The element with locator--->>>By.xpath: //*[text()='Sign Out']<----was found
+11:55:37.883 INFO  manager.MyListener - Start find element--->>>By.cssSelector: [href='/login']
+11:55:37.905 INFO  manager.MyListener - The element with locator--->>>By.cssSelector: [href='/login']<----was found
+11:55:37.973 INFO  manager.MyListener - Start find element--->>>By.xpath: //input[1]
+11:55:37.986 INFO  manager.MyListener - The element with locator--->>>By.xpath: //input[1]<----was found
+11:55:38.092 INFO  manager.MyListener - Start find element--->>>By.xpath: //input[2]
+11:55:38.105 INFO  manager.MyListener - The element with locator--->>>By.xpath: //input[2]<----was found
+11:55:38.187 INFO  manager.MyListener - Start find element--->>>By.xpath: //*[text()=' Login']
+11:55:38.200 INFO  manager.MyListener - The element with locator--->>>By.xpath: //*[text()=' Login']<----was found
+11:55:38.228 INFO  tests.TestBAse - Start testaddNewContactSuccess
+11:55:38.234 INFO  manager.MyListener - Start find element--->>>By.cssSelector: a[href='/add']
+11:55:38.863 INFO  manager.MyListener - The element with locator--->>>By.cssSelector: a[href='/add']<----was found
+11:55:38.904 INFO  manager.MyListener - Start find element--->>>By.xpath: //a[@class='active']
+11:55:38.917 INFO  manager.MyListener - The element with locator--->>>By.xpath: //a[@class='active']<----was found
+11:55:38.940 INFO  manager.MyListener - Start find element--->>>By.xpath: //input[@placeholder='Name']
+11:55:38.951 INFO  manager.MyListener - The element with locator--->>>By.xpath: //input[@placeholder='Name']<----was found
+11:55:39.026 INFO  manager.MyListener - Start find element--->>>By.xpath: //input[@placeholder='Last Name']
+11:55:39.038 INFO  manager.MyListener - The element with locator--->>>By.xpath: //input[@placeholder='Last Name']<----was found
+11:55:39.132 INFO  manager.MyListener - Start find element--->>>By.xpath: //input[@placeholder='Phone']
+11:55:39.143 INFO  manager.MyListener - The element with locator--->>>By.xpath: //input[@placeholder='Phone']<----was found
+11:55:39.224 INFO  manager.MyListener - Start find element--->>>By.xpath: //input[@placeholder='email']
+11:55:39.236 INFO  manager.MyListener - The element with locator--->>>By.xpath: //input[@placeholder='email']<----was found
+11:55:39.322 INFO  manager.MyListener - Start find element--->>>By.xpath: //input[@placeholder='Address']
+11:55:39.335 INFO  manager.MyListener - The element with locator--->>>By.xpath: //input[@placeholder='Address']<----was found
+11:55:39.434 INFO  manager.MyListener - Start find element--->>>By.xpath: //input[@placeholder='description']
+11:55:39.445 INFO  manager.MyListener - The element with locator--->>>By.xpath: //input[@placeholder='description']<----was found
+11:55:39.517 INFO  manager.MyListener - Start find element--->>>By.cssSelector: b
+11:55:39.528 INFO  manager.MyListener - The element with locator--->>>By.cssSelector: b<----was found
+11:55:44.561 INFO  manager.MyListener - Start find element--->>>By.cssSelector: .active
+11:55:44.584 INFO  manager.MyListener - The element with locator--->>>By.cssSelector: .active<----was found
+11:55:44.589 INFO  manager.MyListener - Start find element--->>>By.cssSelector: .contact-item_card__2SOIM
+11:55:44.609 INFO  manager.MyListener - The element with locator--->>>By.cssSelector: .contact-item_card__2SOIM<----was found
+11:55:44.610 INFO  manager.MyListener - Start find element--->>>By.cssSelector: h2
+11:55:44.632 INFO  manager.MyListener - The element with locator--->>>By.cssSelector: h2<----was found
+11:55:44.659 INFO  manager.MyListener - Start find element--->>>By.cssSelector: h3
+11:55:44.681 INFO  manager.MyListener - The element with locator--->>>By.cssSelector: h3<----was found
+11:55:44.710 INFO  tests.TestBAse - End of testaddNewContactSuccess
+11:55:44.722 INFO  tests.TestBAse - Start test --->addNewContactSuccessProviderCSV
+11:55:44.723 INFO  manager.MyListener - Start find element--->>>By.xpath: //*[text()='Sign Out']
+11:55:44.745 INFO  manager.MyListener - The element with locator--->>>By.xpath: //*[text()='Sign Out']<----was found
+11:55:44.781 INFO  tests.TestBAse - Test start with contactContact(name=Mona, lastName=Dow, phone=99988897, email=mona@gmail.com, address=Haifa, description=friend)
+11:55:44.782 INFO  manager.MyListener - Start find element--->>>By.cssSelector: a[href='/add']
+11:55:44.791 INFO  manager.MyListener - The element with locator--->>>By.cssSelector: a[href='/add']<----was found
+11:55:44.829 INFO  manager.MyListener - Start find element--->>>By.xpath: //a[@class='active']
+11:55:44.837 INFO  manager.MyListener - The element with locator--->>>By.xpath: //a[@class='active']<----was found
+11:55:44.857 INFO  manager.MyListener - Start find element--->>>By.xpath: //input[@placeholder='Name']
+11:55:44.866 INFO  manager.MyListener - The element with locator--->>>By.xpath: //input[@placeholder='Name']<----was found
+11:55:44.946 INFO  manager.MyListener - Start find element--->>>By.xpath: //input[@placeholder='Last Name']
+11:55:44.953 INFO  manager.MyListener - The element with locator--->>>By.xpath: //input[@placeholder='Last Name']<----was found
+11:55:45.038 INFO  manager.MyListener - Start find element--->>>By.xpath: //input[@placeholder='Phone']
+11:55:45.050 INFO  manager.MyListener - The element with locator--->>>By.xpath: //input[@placeholder='Phone']<----was found
+11:55:45.128 INFO  manager.MyListener - Start find element--->>>By.xpath: //input[@placeholder='email']
+11:55:45.145 INFO  manager.MyListener - The element with locator--->>>By.xpath: //input[@placeholder='email']<----was found
+11:55:45.309 INFO  manager.MyListener - Start find element--->>>By.xpath: //input[@placeholder='Address']
+11:55:45.329 INFO  manager.MyListener - The element with locator--->>>By.xpath: //input[@placeholder='Address']<----was found
+11:55:45.409 INFO  manager.MyListener - Start find element--->>>By.xpath: //input[@placeholder='description']
+11:55:45.423 INFO  manager.MyListener - The element with locator--->>>By.xpath: //input[@placeholder='description']<----was found
+11:55:45.495 INFO  manager.MyListener - Start find element--->>>By.cssSelector: b
+11:55:45.512 INFO  manager.MyListener - The element with locator--->>>By.cssSelector: b<----was found
+11:55:50.552 INFO  tests.TestBAse - End of testaddNewContactSuccessProviderCSV
+11:55:50.553 INFO  tests.TestBAse - Start test --->addNewContactSuccessProviderCSV
+11:55:50.554 INFO  manager.MyListener - Start find element--->>>By.xpath: //*[text()='Sign Out']
+11:55:50.576 INFO  manager.MyListener - The element with locator--->>>By.xpath: //*[text()='Sign Out']<----was found
+11:55:50.578 INFO  tests.TestBAse - Test start with contactContact(name=Joe, lastName=Wow, phone=99988899, email=monka@gmail.com, address=Rehovot,Israel, description=friend)
+11:55:50.578 INFO  manager.MyListener - Start find element--->>>By.cssSelector: a[href='/add']
+11:55:50.600 INFO  manager.MyListener - The element with locator--->>>By.cssSelector: a[href='/add']<----was found
+11:55:50.654 INFO  manager.MyListener - Start find element--->>>By.xpath: //a[@class='active']
+11:55:50.674 INFO  manager.MyListener - The element with locator--->>>By.xpath: //a[@class='active']<----was found
+11:55:50.718 INFO  manager.MyListener - Start find element--->>>By.xpath: //input[@placeholder='Name']
+11:55:50.729 INFO  manager.MyListener - The element with locator--->>>By.xpath: //input[@placeholder='Name']<----was found
+11:55:50.806 INFO  manager.MyListener - Start find element--->>>By.xpath: //input[@placeholder='Last Name']
+11:55:50.819 INFO  manager.MyListener - The element with locator--->>>By.xpath: //input[@placeholder='Last Name']<----was found
+11:55:50.916 INFO  manager.MyListener - Start find element--->>>By.xpath: //input[@placeholder='Phone']
+11:55:50.927 INFO  manager.MyListener - The element with locator--->>>By.xpath: //input[@placeholder='Phone']<----was found
+11:55:51.014 INFO  manager.MyListener - Start find element--->>>By.xpath: //input[@placeholder='email']
+11:55:51.025 INFO  manager.MyListener - The element with locator--->>>By.xpath: //input[@placeholder='email']<----was found
+11:55:51.108 INFO  manager.MyListener - Start find element--->>>By.xpath: //input[@placeholder='Address']
+11:55:51.119 INFO  manager.MyListener - The element with locator--->>>By.xpath: //input[@placeholder='Address']<----was found
+11:55:51.194 INFO  manager.MyListener - Start find element--->>>By.xpath: //input[@placeholder='description']
+11:55:51.206 INFO  manager.MyListener - The element with locator--->>>By.xpath: //input[@placeholder='description']<----was found
+11:55:51.292 INFO  manager.MyListener - Start find element--->>>By.cssSelector: b
+11:55:51.303 INFO  manager.MyListener - The element with locator--->>>By.cssSelector: b<----was found
+11:55:56.331 INFO  tests.TestBAse - End of testaddNewContactSuccessProviderCSV
+11:55:56.333 INFO  tests.TestBAse - Start test --->addNewContactSuccessProviderCSV
+11:55:56.334 INFO  manager.MyListener - Start find element--->>>By.xpath: //*[text()='Sign Out']
+11:55:56.356 INFO  manager.MyListener - The element with locator--->>>By.xpath: //*[text()='Sign Out']<----was found
+11:55:56.357 INFO  tests.TestBAse - Test start with contactContact(name=Moo, lastName=Kow, phone=99988807, email=mo0na@gmail.com, address=TelAviv, description=friend)
+11:55:56.357 INFO  manager.MyListener - Start find element--->>>By.cssSelector: a[href='/add']
+11:55:56.375 INFO  manager.MyListener - The element with locator--->>>By.cssSelector: a[href='/add']<----was found
+11:55:56.429 INFO  manager.MyListener - Start find element--->>>By.xpath: //a[@class='active']
+11:55:56.442 INFO  manager.MyListener - The element with locator--->>>By.xpath: //a[@class='active']<----was found
+11:55:56.464 INFO  manager.MyListener - Start find element--->>>By.xpath: //input[@placeholder='Name']
+11:55:56.475 INFO  manager.MyListener - The element with locator--->>>By.xpath: //input[@placeholder='Name']<----was found
+11:55:56.556 INFO  manager.MyListener - Start find element--->>>By.xpath: //input[@placeholder='Last Name']
+11:55:56.568 INFO  manager.MyListener - The element with locator--->>>By.xpath: //input[@placeholder='Last Name']<----was found
+11:55:56.646 INFO  manager.MyListener - Start find element--->>>By.xpath: //input[@placeholder='Phone']
+11:55:56.657 INFO  manager.MyListener - The element with locator--->>>By.xpath: //input[@placeholder='Phone']<----was found
+11:55:56.742 INFO  manager.MyListener - Start find element--->>>By.xpath: //input[@placeholder='email']
+11:55:56.750 INFO  manager.MyListener - The element with locator--->>>By.xpath: //input[@placeholder='email']<----was found
+11:55:56.835 INFO  manager.MyListener - Start find element--->>>By.xpath: //input[@placeholder='Address']
+11:55:56.846 INFO  manager.MyListener - The element with locator--->>>By.xpath: //input[@placeholder='Address']<----was found
+11:55:56.937 INFO  manager.MyListener - Start find element--->>>By.xpath: //input[@placeholder='description']
+11:55:56.948 INFO  manager.MyListener - The element with locator--->>>By.xpath: //input[@placeholder='description']<----was found
+11:55:57.017 INFO  manager.MyListener - Start find element--->>>By.cssSelector: b
+11:55:57.028 INFO  manager.MyListener - The element with locator--->>>By.cssSelector: b<----was found
+11:56:02.057 INFO  tests.TestBAse - End of testaddNewContactSuccessProviderCSV
+11:56:02.058 INFO  tests.TestBAse - Start test --->addNewContactSuccessProviderCSV
+11:56:02.060 INFO  manager.MyListener - Start find element--->>>By.xpath: //*[text()='Sign Out']
+11:56:02.083 INFO  manager.MyListener - The element with locator--->>>By.xpath: //*[text()='Sign Out']<----was found
+11:56:02.085 INFO  tests.TestBAse - Test start with contactContact(name=Mana, lastName=Bow, phone=99088897, email=bona@gmail.com, address=Haifa, description=friend)
+11:56:02.085 INFO  manager.MyListener - Start find element--->>>By.cssSelector: a[href='/add']
+11:56:02.105 INFO  manager.MyListener - The element with locator--->>>By.cssSelector: a[href='/add']<----was found
+11:56:02.147 INFO  manager.MyListener - Start find element--->>>By.xpath: //a[@class='active']
+11:56:02.163 INFO  manager.MyListener - The element with locator--->>>By.xpath: //a[@class='active']<----was found
+11:56:02.206 INFO  manager.MyListener - Start find element--->>>By.xpath: //input[@placeholder='Name']
+11:56:02.216 INFO  manager.MyListener - The element with locator--->>>By.xpath: //input[@placeholder='Name']<----was found
+11:56:02.332 INFO  manager.MyListener - Start find element--->>>By.xpath: //input[@placeholder='Last Name']
+11:56:02.343 INFO  manager.MyListener - The element with locator--->>>By.xpath: //input[@placeholder='Last Name']<----was found
+11:56:02.418 INFO  manager.MyListener - Start find element--->>>By.xpath: //input[@placeholder='Phone']
+11:56:02.432 INFO  manager.MyListener - The element with locator--->>>By.xpath: //input[@placeholder='Phone']<----was found
+11:56:02.536 INFO  manager.MyListener - Start find element--->>>By.xpath: //input[@placeholder='email']
+11:56:02.548 INFO  manager.MyListener - The element with locator--->>>By.xpath: //input[@placeholder='email']<----was found
+11:56:02.666 INFO  manager.MyListener - Start find element--->>>By.xpath: //input[@placeholder='Address']
+11:56:02.686 INFO  manager.MyListener - The element with locator--->>>By.xpath: //input[@placeholder='Address']<----was found
+11:56:02.790 INFO  manager.MyListener - Start find element--->>>By.xpath: //input[@placeholder='description']
+11:56:02.802 INFO  manager.MyListener - The element with locator--->>>By.xpath: //input[@placeholder='description']<----was found
+11:56:02.898 INFO  manager.MyListener - Start find element--->>>By.cssSelector: b
+11:56:02.912 INFO  manager.MyListener - The element with locator--->>>By.cssSelector: b<----was found
+11:56:07.946 INFO  tests.TestBAse - End of testaddNewContactSuccessProviderCSV

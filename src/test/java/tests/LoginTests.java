@@ -12,21 +12,21 @@ import java.lang.reflect.Method;
 
 public class LoginTests extends TestBAse {
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void precondition(Method m) {////is login?->log out
         if (app.getHelperuser().isSignOutPresent()) {
             app.getHelperuser().logout();
-            //logger.info("Test" + m + " needs logout");
+            logger.info("start test" + m.getName());
 
         }
 
 
     }
 
-    @BeforeMethod
-    public void startLogger(Method m) {
-        logger.info("start test" + m.getName());
-    }
+//    @BeforeMethod
+//    public void startLogger(Method m) {
+//        logger.info("start test" + m.getName());
+//    }
 
     @Test
     //metod loginsuccess ne smojem pochinit. on trebudet webdriver no ego tut ne budet. poetomu nuno ves metod udalit
@@ -108,8 +108,8 @@ public class LoginTests extends TestBAse {
         Assert.assertTrue(app.getHelperuser().isSignOutPresent());
     }
 
-    @Test(dataProvider="validModelLogin", dataProviderClass = MyDataProvider.class)
-    public void loginModelDataProvider(User user){
+    @Test(dataProvider = "validModelLogin", dataProviderClass = MyDataProvider.class)
+    public void loginModelDataProvider(User user) {
         app.getHelperuser().openLoginRegistrationForm();
         app.getHelperuser().fillLoginRegistrationForm(user);
         app.getHelperuser().submitLogin();
@@ -118,18 +118,17 @@ public class LoginTests extends TestBAse {
 
     }
 
-    @Test(dataProvider="validModelCSV", dataProviderClass = MyDataProvider.class)
+    @Test(dataProvider = "validModelCSV", dataProviderClass = MyDataProvider.class)
     public void loginModelCSVDataProvider(User user) {
         app.getHelperuser().openLoginRegistrationForm();
         app.getHelperuser().fillLoginRegistrationForm(user);
         app.getHelperuser().submitLogin();
         app.getHelperuser().pause(5000);
-          Assert.assertTrue(app.getHelperuser().isSignOutPresent());
+        Assert.assertTrue(app.getHelperuser().isSignOutPresent());
     }
 
 
-
-    @Test
+    @Test(groups = {"web"})
     public void loginNegativePassword() {
         User user = new User().withEmail("missira85@gmail.com").withPassword("Iira");
 
@@ -137,7 +136,6 @@ public class LoginTests extends TestBAse {
         app.getHelperuser().fillLoginRegistrationForm(user);
         app.getHelperuser().submitLogin();
         app.getHelperuser().pause(5000);
-        // Assert.assertFalse(app.getHelperuser().isSignOutPresent());
         Assert.assertTrue(app.getHelperuser().isAlertDisplayed());
         Assert.assertTrue(app.getHelperuser().isErrorWrongFormat());
 

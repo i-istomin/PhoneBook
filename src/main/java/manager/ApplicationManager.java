@@ -2,6 +2,8 @@ package manager;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.BrowserType;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,11 +16,23 @@ public class ApplicationManager {
     HelperUser helperuser;
     ContactHelper contact;
     Logger logger = LoggerFactory.getLogger(ApplicationManager.class);
+    String browser;//firefox
 
+    public ApplicationManager(String browser) {//dobavili constructor chtobi otkrivalsia firefox
+        this.browser = browser;
+    }
 
     public void init() {
-        wd = new EventFiringWebDriver(new ChromeDriver());//vmesto new ChromeDriver(); sozdali EventFiringWebDriver
-        logger.info("All tests start in ChromeDriver");
+
+        if (browser.equals(BrowserType.CHROME)) {
+            wd = new EventFiringWebDriver(new ChromeDriver());//vmesto new ChromeDriver(); sozdali EventFiringWebDriver
+            logger.info("All tests start in ChromeDriver");
+
+        } else if (browser.equals(BrowserType.FIREFOX)) {
+            wd = new EventFiringWebDriver(new FirefoxDriver());
+        }
+
+        // System.setProperty("webdriver.firefox.driver","/home/i-istomin/TelRan/SYSTEMS/PhoneBook/geckodriver");
         System.setProperty("webdriver.chrome.driver", "/home/i-istomin/TelRan/SYSTEMS/Qa32_StartSelenium/chromedriver");
         wd.manage().window().maximize();
         wd.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);//LONG TIME, TIMEUNIT

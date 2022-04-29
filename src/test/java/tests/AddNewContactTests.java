@@ -4,21 +4,24 @@ import manager.MyDataProvider;
 import models.Contact;
 import models.User;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import java.lang.reflect.Method;
+
 public class AddNewContactTests extends TestBAse {
 
-    @BeforeMethod
-    public void preCondition() {
+    @BeforeMethod(alwaysRun = true)
+    public void preCondition(Method m) {
         if (!app.getHelperuser().isSignOutPresent()) {
             app.getHelperuser().login(new User().withEmail("missira85@gmail.com").withPassword("Passw0rd$"));
+            logger.info(("Start test" + m.getName()));
         }
     }
 
 
     @Test
-
     public void addNewContactSuccess() {
         int index = (int) (System.currentTimeMillis() / 1000) % 3600;
 
@@ -53,6 +56,7 @@ public class AddNewContactTests extends TestBAse {
 
         int index = (int) (System.currentTimeMillis() / 1000) % 3600;
 
+        logger.info("Test start with contact" +contact.toString());
         contact.setEmail("hello" + index + "@gmail.com");
         contact.setPhone("05258634" + index);
 
@@ -62,5 +66,10 @@ public class AddNewContactTests extends TestBAse {
         app.getContact().saveContactForm();
         app.getContact().pause(5000);;
 
+    }
+
+    @AfterMethod
+    public void endLogger(Method m) {
+        logger.info("End of test" + m.getName());
     }
 }

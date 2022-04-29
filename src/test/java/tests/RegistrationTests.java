@@ -2,12 +2,15 @@ package tests;
 
 import models.User;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import java.lang.reflect.Method;
+
 public class RegistrationTests extends TestBAse {
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void preCondition() {
         if (app.getHelperuser().isSignOutPresent()) {
             app.getHelperuser().logout();
@@ -15,7 +18,7 @@ public class RegistrationTests extends TestBAse {
     }
 
 
-    @Test
+    @Test(groups = {"web"})
     public void registrationSuccess() {
         int index = (int) (System.currentTimeMillis() / 1000) % 3600;
         System.out.println(index); //==sout
@@ -57,6 +60,11 @@ public class RegistrationTests extends TestBAse {
         Assert.assertTrue(app.getHelperuser().isRegistrationErrorDisplayed());
 
 
+    }
+
+    @AfterMethod
+    public void endLogger(Method m) {
+        logger.info("End of test" + m.getName());
     }
 
 }

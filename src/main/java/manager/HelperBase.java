@@ -1,14 +1,10 @@
 package manager;
 
 import com.google.common.io.Files;
-import models.User;
 import org.openqa.selenium.*;
 
 import java.io.File;
 import java.io.IOException;
-
-import static com.google.common.io.Files.copy;
-import static java.io.File.*;
 
 public class HelperBase {
     WebDriver wd;

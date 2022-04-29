@@ -16,5 +16,6 @@ public class OpenWiki {
     public void openWikipedia(){
         wd=new ChromeDriver();
         wd.get("https://ru.wikipedia.org/");
+        wd.quit();
     }
 }

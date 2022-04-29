@@ -1,2 +1,0 @@
-19:31:43.900 INFO  manager.ApplicationManager - All tests start in ChromeDriver
-19:31:45.166 INFO  manager.MyListener - Start find element--->>>By.xpath: //*[text()='Sign Out']
