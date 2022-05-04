@@ -97,7 +97,7 @@ public class LoginTests extends TestBAse {
     }
 
 
-    @Test
+    @Test(description = "This test check successful login to the system")
     public void loginSuccessModel() {
         User user = new User().withEmail("missira85@gmail.com").withPassword("Passw0rd$");
 

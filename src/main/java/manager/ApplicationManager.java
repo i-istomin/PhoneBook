@@ -30,6 +30,7 @@ public class ApplicationManager {
 
         } else if (browser.equals(BrowserType.FIREFOX)) {
             wd = new EventFiringWebDriver(new FirefoxDriver());
+            logger.info("Tests start in FirefoxDriver");
         }
 
         // System.setProperty("webdriver.firefox.driver","/home/i-istomin/TelRan/SYSTEMS/PhoneBook/geckodriver");
@@ -46,7 +47,7 @@ public class ApplicationManager {
     }
 
     public void stop() {
-        //  wd.quit();//zakrivaem browser
+         wd.quit();//zakrivaem browser
     }
 
     //pravaya knopka+generate+getter+helper+ok

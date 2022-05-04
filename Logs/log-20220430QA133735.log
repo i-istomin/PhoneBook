@@ -1,0 +1,63 @@
+13:37:36.277 INFO  manager.ApplicationManager - All tests start in ChromeDriver
+13:37:36.991 INFO  tests.TestBAse - Start test --->removeAllContactTaya
+13:37:36.993 INFO  manager.MyListener - Start find element--->>>By.xpath: //*[text()='Sign Out']
+13:37:42.044 INFO  manager.MyListener - The element with locator--->>>By.xpath: //*[text()='Sign Out']<----was found
+13:37:42.045 INFO  manager.MyListener - Start find element--->>>By.cssSelector: [href='/login']
+13:37:42.068 INFO  manager.MyListener - The element with locator--->>>By.cssSelector: [href='/login']<----was found
+13:37:42.137 INFO  manager.MyListener - Start find element--->>>By.xpath: //input[1]
+13:37:42.151 INFO  manager.MyListener - The element with locator--->>>By.xpath: //input[1]<----was found
+13:37:42.249 INFO  manager.MyListener - Start find element--->>>By.xpath: //input[2]
+13:37:42.261 INFO  manager.MyListener - The element with locator--->>>By.xpath: //input[2]<----was found
+13:37:42.360 INFO  manager.MyListener - Start find element--->>>By.xpath: //*[text()=' Login']
+13:37:42.373 INFO  manager.MyListener - The element with locator--->>>By.xpath: //*[text()=' Login']<----was found
+13:37:42.412 INFO  tests.TestBAse - Start testremoveAllContactTaya
+13:37:42.415 INFO  manager.MyListener - Start find element--->>>By.cssSelector: .contact-item_card__2SOIM
+13:37:43.234 INFO  manager.MyListener - The element with locator--->>>By.cssSelector: .contact-item_card__2SOIM<----was found
+13:37:43.235 INFO  manager.MyListener - Start find element--->>>By.cssSelector: .contact-item_card__2SOIM
+13:37:43.255 INFO  manager.MyListener - The element with locator--->>>By.cssSelector: .contact-item_card__2SOIM<----was found
+13:37:43.307 INFO  manager.MyListener - Start find element--->>>By.xpath: //button[text()='Remove']
+13:37:43.318 INFO  manager.MyListener - The element with locator--->>>By.xpath: //button[text()='Remove']<----was found
+13:37:43.854 INFO  manager.MyListener - Start find element--->>>By.cssSelector: .contact-item_card__2SOIM
+13:37:43.870 INFO  manager.MyListener - The element with locator--->>>By.cssSelector: .contact-item_card__2SOIM<----was found
+13:37:43.871 INFO  manager.MyListener - Start find element--->>>By.cssSelector: .contact-item_card__2SOIM
+13:37:43.884 INFO  manager.MyListener - The element with locator--->>>By.cssSelector: .contact-item_card__2SOIM<----was found
+13:37:43.933 INFO  manager.MyListener - Start find element--->>>By.xpath: //button[text()='Remove']
+13:37:43.941 INFO  manager.MyListener - The element with locator--->>>By.xpath: //button[text()='Remove']<----was found
+13:37:44.477 INFO  manager.MyListener - Start find element--->>>By.cssSelector: .contact-item_card__2SOIM
+13:37:44.495 INFO  manager.MyListener - The element with locator--->>>By.cssSelector: .contact-item_card__2SOIM<----was found
+13:37:44.496 INFO  manager.MyListener - Start find element--->>>By.cssSelector: .contact-item_card__2SOIM
+13:37:44.510 INFO  manager.MyListener - The element with locator--->>>By.cssSelector: .contact-item_card__2SOIM<----was found
+13:37:44.550 INFO  manager.MyListener - Start find element--->>>By.xpath: //button[text()='Remove']
+13:37:44.563 INFO  manager.MyListener - The element with locator--->>>By.xpath: //button[text()='Remove']<----was found
+13:37:45.112 INFO  manager.MyListener - Start find element--->>>By.cssSelector: .contact-item_card__2SOIM
+13:37:45.127 INFO  manager.MyListener - The element with locator--->>>By.cssSelector: .contact-item_card__2SOIM<----was found
+13:37:45.129 INFO  manager.MyListener - Start find element--->>>By.cssSelector: .contact-item_card__2SOIM
+13:37:45.143 INFO  manager.MyListener - The element with locator--->>>By.cssSelector: .contact-item_card__2SOIM<----was found
+13:37:45.182 INFO  manager.MyListener - Start find element--->>>By.xpath: //button[text()='Remove']
+13:37:45.196 INFO  manager.MyListener - The element with locator--->>>By.xpath: //button[text()='Remove']<----was found
+13:37:45.733 INFO  manager.MyListener - Start find element--->>>By.cssSelector: .contact-item_card__2SOIM
+13:37:45.750 INFO  manager.MyListener - The element with locator--->>>By.cssSelector: .contact-item_card__2SOIM<----was found
+13:37:45.751 INFO  manager.MyListener - Start find element--->>>By.cssSelector: .contact-item_card__2SOIM
+13:37:45.766 INFO  manager.MyListener - The element with locator--->>>By.cssSelector: .contact-item_card__2SOIM<----was found
+13:37:45.806 INFO  manager.MyListener - Start find element--->>>By.xpath: //button[text()='Remove']
+13:37:45.820 INFO  manager.MyListener - The element with locator--->>>By.xpath: //button[text()='Remove']<----was found
+13:37:46.369 INFO  manager.MyListener - Start find element--->>>By.cssSelector: .contact-item_card__2SOIM
+13:37:48.615 INFO  manager.MyListener - The element with locator--->>>By.cssSelector: .contact-item_card__2SOIM<----was found
+13:37:48.615 INFO  manager.MyListener - Start find element--->>>By.cssSelector: .contact-page_message__2qafk
+13:37:48.636 INFO  manager.MyListener - We have a 'throwable'--->>>chrome not reachable
+  (Session info: chrome=96.0.4664.110)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'desktopirina', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.14.0-1033-oem', java.version: '11.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.8x73VB}, goog:chromeOptions: {debuggerAddress: localhost:46279}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f0e586a2d3acd070bd275b8f4e4fee12
+*** Element info: {Using=css selector, value=.contact-page_message__2qafk}
+13:37:48.638 INFO  manager.MyListener - We have a 'fill In Stack Trace'--->>>org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=96.0.4664.110)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'desktopirina', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.14.0-1033-oem', java.version: '11.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.8x73VB}, goog:chromeOptions: {debuggerAddress: localhost:46279}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f0e586a2d3acd070bd275b8f4e4fee12
+*** Element info: {Using=css selector, value=.contact-page_message__2qafk}
+13:37:48.664 INFO  tests.TestBAse - End of testremoveAllContactTaya

@@ -28,8 +28,8 @@ public class RemoveContact extends TestBAse {
     }
 
 
-   // @Test(dependsOnMethods = "removeOneContactTaya",alwaysRun = true)
-    @Test(priority = 2)
+ //@Test(dependsOnMethods = "removeOneContactTaya",alwaysRun = true)
+ @Test(priority = 2)
     public void removeAllContactTaya(){
       app.getContact().removeAllContactTaya();
       Assert.assertTrue(app.getContact().isContactMessageDisplayed());

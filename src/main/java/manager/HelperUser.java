@@ -69,7 +69,8 @@ public class HelperUser extends HelperBase  {
         //posle cklick na knopku login, mi znaem chto uspeha ne budet. u nas negativniy test. i my
         //znaem  chto sistaema vidaet alert
         //poetomu nam nujno napisat metod kot-y provetrit esli alert poyavilsia ili net, i takim obrazom mi vidadim true ili false
-        Alert alert = new WebDriverWait(wd, 10).until(ExpectedConditions.alertIsPresent());
+        Alert alert = new WebDriverWait(wd, 10)
+                .until(ExpectedConditions.alertIsPresent());
         // mi vivizem wait i daem na poyavlenie etogo alerta 10 sec
         if (alert == null) { //esli alert ne poyavilsia, to vernem false
             return false;
@@ -79,8 +80,10 @@ public class HelperUser extends HelperBase  {
     }
 
     public boolean isErrorWrongFormat() {
-        Alert alert = new WebDriverWait(wd, 10).until(ExpectedConditions.alertIsPresent());//snachala dojidaemsia poka alert poyavitsia
+        Alert alert = new WebDriverWait(wd, 10)
+                .until(ExpectedConditions.alertIsPresent());//snachala dojidaemsia poka alert poyavitsia
         wd.switchTo().alert(); //potom perekluchaem alert na drugoe okno
+
         String error= alert.getText();//vichitivaet text kot-y vpisan v alert
         System.out.println(error);
         alert.accept();

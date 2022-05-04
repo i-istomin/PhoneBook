@@ -1,0 +1,3 @@
+18:46:41.976 INFO  manager.TestNgListener - onStart(ISuite suite)
+18:46:42.780 INFO  manager.ApplicationManager - All tests start in ChromeDriver
+18:46:43.625 INFO  manager.TestNgListener - onFinish(ISuite suite)

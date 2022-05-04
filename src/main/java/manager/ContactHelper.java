@@ -2,7 +2,6 @@ package manager;
 
 import models.Contact;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -18,7 +17,7 @@ public class ContactHelper extends HelperBase {
     }
 
     public void openContactForm() {
-        //  click(By.cssSelector(".active"));
+        //   click(By.cssSelector("[href='/add']"));
         click(By.xpath("//a[@class='active']"));
 
     }
@@ -121,7 +120,7 @@ public class ContactHelper extends HelperBase {
 
         if (!isCountListEmpty()) {
             click(By.cssSelector(".contact-item_card__2SOIM"));
-            click(By.xpath("//button[normalize-space()='Remove']"));
+            click(By.xpath("//button[normalize-space()='Remove']"));//click(By.xpath("//button[text()='Remove']"));
             pause(500);
         }
         int countAfter = countOfContacts();
